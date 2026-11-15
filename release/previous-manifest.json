@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "legacyBase": "1fa1240b57abcb80ea639bf35ca9bb43fb7486fc",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "index.html",
+      "sha256": "437afecd1c18a2b5c441daf717ae6b76483a946f2530e7a59cb2fa1b491066f1",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v5/index.html",
+      "sha256": "2268d4bc804b6117c5890c8ac00af208e8463f5dfbaeb6ce8289946783541dfb"
+    },
+    {
+      "path": "v5/web/app.mjs",
+      "sha256": "ef8cf7be9548dbf10a43afa9cc786f0965015a912806e5357f8c613ba4348135"
+    },
+    {
+      "path": "v5/web/main.mjs",
+      "sha256": "84bb259b6a7f01f622b5a2d6165100bcd19087c7657927114ec74f5b10d75af4"
+    },
+    {
+      "path": "v5/web/mark.svg",
+      "sha256": "8b2cac435bfa4eda1bc0f9e53d926310f66163dcff986413023f0bc465aba498"
+    },
+    {
+      "path": "v5/web/style.css",
+      "sha256": "04865e2106e13d66c0e71674b848eebd960f0f3daf95f3493d2a0624d20cff04"
+    },
+    {
+      "path": "v5/src/core.mjs",
+      "sha256": "455a170ea1c791f235cf9b54e0b3330bea44ee401743e5e584ac172a081982d8"
+    },
+    {
+      "path": "v5/src/schema.mjs",
+      "sha256": "967913bac0b3c40bb6197baab1945f9c455edfd8ab44bdef9f3041a2af686cdb"
+    },
+    {
+      "path": "v5/src/validate.mjs",
+      "sha256": "2143a4f021ea47c027a8075c96b02f2e471de1d4555a3d12a2898ac22556bd0e"
+    },
+    {
+      "path": "v5/data/v5.json",
+      "sha256": "fe4c8354098f62e03670048b5a1e4a0dd7cc9a0a5fd27bf01daace4dbe48b975"
+    },
+    {
+      "path": "v5/config/test-parameters.json",
+      "sha256": "37b6a839e24b5bb4f25120c181369f153760ef243601eef687176af3b9588b6c"
+    }
+  ]
+}

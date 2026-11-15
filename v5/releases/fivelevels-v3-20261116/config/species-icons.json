@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "status": "純展示佔位圖，不新增種族或生成規則",
+  "styles": {
+    "pixel": {
+      "label": "像素風",
+      "fallback": "./assets/species/placeholder-pixel.svg"
+    },
+    "fantasy": {
+      "label": "精緻奇幻風",
+      "fallback": "./assets/species/placeholder-fantasy.svg"
+    }
+  },
+  "species": {
+    "S001": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S002": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S003": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S004": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S005": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S006": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S007": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S008": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S009": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S010": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S011": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S012": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S013": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S014": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    },
+    "S015": {
+      "pixel": "./assets/species/placeholder-pixel.svg",
+      "fantasy": "./assets/species/placeholder-fantasy.svg"
+    }
+  }
+}

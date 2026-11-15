@@ -1,2 +1,3 @@
 # Preserve verified V5 release bytes on all checkout platforms.
 /v5/** -text
+/v5-legacy/** -text

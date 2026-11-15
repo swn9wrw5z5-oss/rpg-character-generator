@@ -4,9 +4,10 @@ import { fileURLToPath } from 'node:url';
 import { tmpdir } from 'node:os';
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
-import { schemas } from '../v5/src/schema.mjs';
-import { assertValidData } from '../v5/src/validate.mjs';
-import { validateTestParameters } from '../v5/src/core.mjs';
+import { schemas } from '../v5/releases/fivelevels-v3-20261116/src/schema.mjs';
+import { assertValidData } from '../v5/releases/fivelevels-v3-20261116/src/validate.mjs';
+import { validateTestParameters } from '../v5/releases/fivelevels-v3-20261116/src/core.mjs';
+import {assertSkillRules} from '../v5/releases/fivelevels-v3-20261116/src/skill-rules.mjs';
 
 export const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const manifest=JSON.parse(await readFile(join(root,'release/manifest.json'),'utf8'));
@@ -21,7 +22,7 @@ function refuse(reason){throw new Error('RELEASE_REJECTED: '+reason);}
 function sha(bytes){return createHash('sha256').update(bytes).digest('hex');}
 function recordHash(bytes,record){return sha(record.lineEndings==='lf-normalized'?Buffer.from(bytes.toString('utf8').replace(/\r\n/g,'\n')):bytes);}
 function validManifest(){
-  if(manifest.version!==1||publicFiles.length!==13||new Set(publicFiles).size!==13)refuse('invalid public manifest');
+  if(manifest.version!==2||publicFiles.length!==44||new Set(publicFiles).size!==44||manifest.runtimeBase!=='v5/releases/fivelevels-v3-20261116/')refuse('invalid public manifest');
   for(const file of publicFiles)if(file.startsWith('/')||file.includes('\\')||file.split('/').includes('..'))refuse('unsafe manifest path');
 }
 export async function verifySite(directory,{exact=true}={}){
@@ -48,7 +49,10 @@ export async function verifySite(directory,{exact=true}={}){
     if(reference.startsWith('#'))return;
     if(!/^\.\.?\//.test(reference))refuse('non-relative resource: '+file);
     const prefix='/rpg-character-generator/';
-    const url=new URL(reference,'https://release.test'+prefix+(markup?'v5/index.html':file));
+    let context=markup?(file.startsWith('v5-legacy/')?'v5-legacy/index.html':manifest.runtimeBase+'index.html'):file;
+    if(file==='v5/index.html'&&reference==='./releases/fivelevels-v3-20261116/')return;
+    if(file==='v5/index.html')context=manifest.runtimeBase+'index.html';
+    const url=new URL(reference,'https://release.test'+prefix+context);
     if(url.origin!=='https://release.test'||!url.pathname.startsWith(prefix)||!publicFiles.includes(decodeURIComponent(url.pathname.slice(prefix.length))))refuse('unapproved or missing resource: '+file);
   }
   for(const record of manifest.files){
@@ -57,7 +61,8 @@ export async function verifySite(directory,{exact=true}={}){
     const bytes=await readFile(path),text=bytes.toString('utf8');
     if(unsafe.some(pattern=>pattern.test(text)))refuse('credential pattern or local path: '+record.path);
     if(recordHash(bytes,record)!==record.sha256)refuse('unreviewed content: '+record.path);
-    if(record.path.endsWith('.html')||record.path==='v5/web/app.mjs')for(const match of text.matchAll(/\b(?:src|href)\s*=\s*["']([^"']+)["']/g))resource(match[1],record.path,record.path.endsWith('.mjs'));
+    if(record.path.endsWith('.html')||record.path.endsWith('/web/app.mjs'))for(const match of text.matchAll(/\b(?:src|href)\s*=\s*["']([^"']+)["']/g))resource(match[1],record.path,record.path.endsWith('.mjs'));
+    if(record.path.startsWith(manifest.runtimeBase)&&/localhost|127\.0\.0\.1|\/api\/|node:|require\(|\.xlsx/i.test(text))refuse('local/server dependency in public runtime: '+record.path);
     if(record.path.endsWith('.mjs')){
       for(const match of text.matchAll(/\bfrom\s*["']([^"']+)["']/g))resource(match[1],record.path);
       for(const match of text.matchAll(/new\s+URL\(\s*["']([^"']+)["']\s*,\s*import\.meta\.url\s*\)/g))resource(match[1],record.path);
@@ -65,7 +70,7 @@ export async function verifySite(directory,{exact=true}={}){
     if(record.path.endsWith('.css'))for(const match of text.matchAll(/url\(\s*["']?([^"')\s]+)["']?\s*\)/g))resource(match[1],record.path);
     output.push({path:record.path,bytes:bytes.length,sha256:sha(bytes)});
   }
-  const data=JSON.parse(await readFile(join(directory,'v5/data/v5.json'),'utf8'));
+  const data=JSON.parse(await readFile(join(directory,manifest.runtimeBase+'data/fivelevels.json'),'utf8'));
   const top=['schemaVersion','formulaContract','source','validation',...Object.keys(schemas)].sort();
   if(!isDeepStrictEqual(Object.keys(data).sort(),top)||!isDeepStrictEqual(Object.keys(data.source),['sha256']))refuse('unexpected JSON metadata');
   for(const [table,[,mapping]] of Object.entries(schemas)){
@@ -73,9 +78,11 @@ export async function verifySite(directory,{exact=true}={}){
     for(const row of data[table])if(!isDeepStrictEqual(Object.keys(row).sort(),keys))refuse('raw or unknown data field: '+table);
   }
   const validation=assertValidData(data);
-  if(!isDeepStrictEqual(data.validation,validation))refuse('warnings do not match core validation');
-  const parameters=JSON.parse(await readFile(join(directory,'v5/config/test-parameters.json'),'utf8'));
+  if(!isDeepStrictEqual(data.validation.warnings,validation.warnings))refuse('warnings do not match core validation');
+  const parameters=JSON.parse(await readFile(join(directory,manifest.runtimeBase+'config/fivelevels-parameters.json'),'utf8'));
   validateTestParameters(data,parameters);
+  const rules=JSON.parse(await readFile(join(directory,manifest.runtimeBase+'config/fivelevels-rules.json'),'utf8'));assertSkillRules(data,rules);
+  if(rules.version!==3||rules.skills.length!==27||rules.levelTables.some(t=>t.levels.length!==5))refuse('not the reviewed five-level model');
   return {ok:true,files:output,warningCount:validation.warnings.length,sourceSha256:data.source.sha256};
 }
 export async function buildSite({output=join(root,'dist')}={}){

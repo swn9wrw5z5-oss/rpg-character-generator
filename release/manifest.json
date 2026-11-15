@@ -1,6 +1,9 @@
 {
-  "version": 1,
+  "version": 2,
+  "release": "27-skills-five-levels-v3-20261116",
+  "previousMain": "d208ba4eff6e8dae6b36046ac8f0cfb3f0ee814b",
   "legacyBase": "1fa1240b57abcb80ea639bf35ca9bb43fb7486fc",
+  "runtimeBase": "v5/releases/fivelevels-v3-20261116/",
   "files": [
     {
       "path": ".nojekyll",
@@ -17,43 +20,207 @@
     },
     {
       "path": "v5/index.html",
-      "sha256": "2268d4bc804b6117c5890c8ac00af208e8463f5dfbaeb6ce8289946783541dfb"
+      "sha256": "bda4567f87bfb3d4d4a795db74067380099fd62969001e3cd13c3cb150015a23",
+      "lineEndings": "lf-normalized"
     },
     {
-      "path": "v5/web/app.mjs",
-      "sha256": "ef8cf7be9548dbf10a43afa9cc786f0965015a912806e5357f8c613ba4348135"
+      "path": "v5/releases/fivelevels-v3-20261116/web/app.mjs",
+      "sha256": "23747ea410750b8e604b0995b78b3174e18295bb40224496d06a7380bb870c31",
+      "lineEndings": "lf-normalized"
     },
     {
-      "path": "v5/web/main.mjs",
-      "sha256": "84bb259b6a7f01f622b5a2d6165100bcd19087c7657927114ec74f5b10d75af4"
+      "path": "v5/releases/fivelevels-v3-20261116/web/main.mjs",
+      "sha256": "9c7c37e2d7e66df464916197a821623bf5e96325eaf2c36dc8b3ffc324a2592b",
+      "lineEndings": "lf-normalized"
     },
     {
-      "path": "v5/web/mark.svg",
-      "sha256": "8b2cac435bfa4eda1bc0f9e53d926310f66163dcff986413023f0bc465aba498"
+      "path": "v5/releases/fivelevels-v3-20261116/web/style.css",
+      "sha256": "14f5b5b5b849b8910863a73bc28faf52d36661e8240b8c8a66ec8e1cea1dbbf0",
+      "lineEndings": "lf-normalized"
     },
     {
-      "path": "v5/web/style.css",
-      "sha256": "04865e2106e13d66c0e71674b848eebd960f0f3daf95f3493d2a0624d20cff04"
+      "path": "v5/releases/fivelevels-v3-20261116/web/mark.svg",
+      "sha256": "8b2cac435bfa4eda1bc0f9e53d926310f66163dcff986413023f0bc465aba498",
+      "lineEndings": "lf-normalized"
     },
     {
-      "path": "v5/src/core.mjs",
-      "sha256": "455a170ea1c791f235cf9b54e0b3330bea44ee401743e5e584ac172a081982d8"
+      "path": "v5/releases/fivelevels-v3-20261116/web/species-portrait.mjs",
+      "sha256": "784f0781ed83072db25cf8c202cb81869c84833ce0207c169877b0f4728cb3df",
+      "lineEndings": "lf-normalized"
     },
     {
-      "path": "v5/src/schema.mjs",
-      "sha256": "967913bac0b3c40bb6197baab1945f9c455edfd8ab44bdef9f3041a2af686cdb"
+      "path": "v5/releases/fivelevels-v3-20261116/web/public-statistics.mjs",
+      "sha256": "0f51d45e615acacef2f0c72e3adfa72433954708794b40c0662b7316261a5ac6",
+      "lineEndings": "lf-normalized"
     },
     {
-      "path": "v5/src/validate.mjs",
-      "sha256": "2143a4f021ea47c027a8075c96b02f2e471de1d4555a3d12a2898ac22556bd0e"
+      "path": "v5/releases/fivelevels-v3-20261116/src/core.mjs",
+      "sha256": "d2925053c53c93887e22d5588b016e7200d4b065e19ed195af4b4172790991dd",
+      "lineEndings": "lf-normalized"
     },
     {
-      "path": "v5/data/v5.json",
-      "sha256": "fe4c8354098f62e03670048b5a1e4a0dd7cc9a0a5fd27bf01daace4dbe48b975"
+      "path": "v5/releases/fivelevels-v3-20261116/src/schema.mjs",
+      "sha256": "967913bac0b3c40bb6197baab1945f9c455edfd8ab44bdef9f3041a2af686cdb",
+      "lineEndings": "lf-normalized"
     },
     {
-      "path": "v5/config/test-parameters.json",
-      "sha256": "37b6a839e24b5bb4f25120c181369f153760ef243601eef687176af3b9588b6c"
+      "path": "v5/releases/fivelevels-v3-20261116/src/validate.mjs",
+      "sha256": "2143a4f021ea47c027a8075c96b02f2e471de1d4555a3d12a2898ac22556bd0e",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/src/skill-core.mjs",
+      "sha256": "17a2d3865e294cd653a31f627e8724ecf68fc1af08361c602b0fd4e5b4a1167a",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/src/skill-rules.mjs",
+      "sha256": "54d80e10fbf8a0ac9c40a34c4c695155febde6d187451311c5cb84e62e9f2ed7",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/src/skill-reservation.mjs",
+      "sha256": "45d08bf9afa05e9d86f831da9f9c0950cd301a1e38df7cce45fa28b43ef9aa28",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/src/skill-statistics.mjs",
+      "sha256": "92ccc0bd9c491ee290caba9ba4f9f1829778769d9a3461a9c18f3115d71ba336",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/data/fivelevels.json",
+      "sha256": "d929825957372889ca98494f40e1e7f279d81ad185be87a1ea26b8c08dbb3a70",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/config/fivelevels-rules.json",
+      "sha256": "e3fbafa7f41a4bf510ef99ac0deec2d6b9c0083dc983156a0c7d7c10e7b27f61",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/config/fivelevels-parameters.json",
+      "sha256": "8090a3984b21709ad31bfb72157f9865c76305a2d8af5aeab429ba64f7b73218",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/config/species-icons.json",
+      "sha256": "7d867b7b9373bcc8cc8509438066d52d0c63a880aa5eacb8c248eaddf20c31d3",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/skills/K001.svg",
+      "sha256": "c1e593973325fc3b175e681976dbc7a2eb55646228dec070639243ac6f7736bf",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/skills/K002.svg",
+      "sha256": "f2bad30486c77726de04f605fd073d4cb8e3eaffde534bfefe928d75daf5a457",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/skills/K003.svg",
+      "sha256": "62d0979ae5b0b4a85aaf8e42b362de9590fb4fb5676daab46d27073afb6fd4ef",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/skills/K004.svg",
+      "sha256": "0cd4c445ff55e302c1166948b5c70192861aebdbd37fa49b5b2ed58eb2f07ddb",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/skills/K005.svg",
+      "sha256": "1f4dc730b3f9ef2248eb0e93da42554b3e82c4c71ac9233f843714619f73896d",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/skills/K006.svg",
+      "sha256": "259efa0433b0822c50efcd584a0b6b12ab317b7ab2297bb4916cdb22c65a79cd",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/skills/K007.svg",
+      "sha256": "affdc579a16168e7e8c71004f31e4511422cad28aa12baade81680cc3ffa58fa",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/skills/K008.svg",
+      "sha256": "9a6eebdd4e436d73695c34c9f0a3ed8062c72f54f74876551a185366674e2543",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/skills/K009.svg",
+      "sha256": "8fbbc1c51c09b7d616664138800325ee6d715534c5c14ea18b5d872600490e8f",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/skills/placeholder.svg",
+      "sha256": "b64e50d02e874c88c5975acf9a792d346a00dacd77eba52d3ee5acf176091ec0",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/species/placeholder-pixel.svg",
+      "sha256": "9117cc5ae3165dfce899356edea0f6cd8afefd004f40c69b17bf55e9da7168cf",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5/releases/fivelevels-v3-20261116/assets/species/placeholder-fantasy.svg",
+      "sha256": "d32c59fc684d52bff7f765a65666e0199d02af5cbb31faaa1280526e55c62d17",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5-legacy/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v5-legacy/index.html",
+      "sha256": "2268d4bc804b6117c5890c8ac00af208e8463f5dfbaeb6ce8289946783541dfb",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5-legacy/web/app.mjs",
+      "sha256": "ef8cf7be9548dbf10a43afa9cc786f0965015a912806e5357f8c613ba4348135",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5-legacy/web/main.mjs",
+      "sha256": "84bb259b6a7f01f622b5a2d6165100bcd19087c7657927114ec74f5b10d75af4",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5-legacy/web/mark.svg",
+      "sha256": "8b2cac435bfa4eda1bc0f9e53d926310f66163dcff986413023f0bc465aba498",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5-legacy/web/style.css",
+      "sha256": "04865e2106e13d66c0e71674b848eebd960f0f3daf95f3493d2a0624d20cff04",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5-legacy/src/core.mjs",
+      "sha256": "455a170ea1c791f235cf9b54e0b3330bea44ee401743e5e584ac172a081982d8",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5-legacy/src/schema.mjs",
+      "sha256": "967913bac0b3c40bb6197baab1945f9c455edfd8ab44bdef9f3041a2af686cdb",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5-legacy/src/validate.mjs",
+      "sha256": "2143a4f021ea47c027a8075c96b02f2e471de1d4555a3d12a2898ac22556bd0e",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5-legacy/data/v5.json",
+      "sha256": "fe4c8354098f62e03670048b5a1e4a0dd7cc9a0a5fd27bf01daace4dbe48b975",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v5-legacy/config/test-parameters.json",
+      "sha256": "37b6a839e24b5bb4f25120c181369f153760ef243601eef687176af3b9588b6c",
+      "lineEndings": "lf-normalized"
     }
   ]
 }

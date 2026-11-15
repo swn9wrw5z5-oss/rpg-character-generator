@@ -1,0 +1,1904 @@
+{
+  "schemaVersion": 1,
+  "formulaContract": "v5-four-values-floor-v1",
+  "source": {
+    "sha256": "5DA27BF7D74D66631FA987CC18788A30D0DE69E95E229142FC30D04D1A5CAF26"
+  },
+  "families": [
+    {
+      "id": "F01",
+      "name": "人族"
+    },
+    {
+      "id": "F02",
+      "name": "半獸族"
+    },
+    {
+      "id": "F03",
+      "name": "精靈族"
+    },
+    {
+      "id": "F04",
+      "name": "龍族"
+    },
+    {
+      "id": "F05",
+      "name": "混血族類"
+    }
+  ],
+  "species": [
+    {
+      "id": "S001",
+      "familyId": "F01",
+      "name": "人類",
+      "bodyId": "BODY_HUM_01",
+      "skeletonId": "HUMANOID",
+      "status": "確定示例",
+      "minWidth": 6,
+      "maxWidth": 10,
+      "minHeight": 5,
+      "maxHeight": 7,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S002",
+      "familyId": "F02",
+      "name": "吸血族",
+      "bodyId": "BODY_BEAST_01",
+      "skeletonId": "HUMANOID",
+      "status": "確定示例",
+      "minWidth": 7,
+      "maxWidth": 9,
+      "minHeight": 5,
+      "maxHeight": 7,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S003",
+      "familyId": "F02",
+      "name": "狼人",
+      "bodyId": "BODY_BEAST_02",
+      "skeletonId": "HUMANOID",
+      "status": "確定示例",
+      "minWidth": 7,
+      "maxWidth": 10,
+      "minHeight": 5,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S004",
+      "familyId": "F02",
+      "name": "半獸人",
+      "bodyId": "BODY_BEAST_03",
+      "skeletonId": "HUMANOID",
+      "status": "確定示例",
+      "minWidth": 8,
+      "maxWidth": 10,
+      "minHeight": 6,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S005",
+      "familyId": "F02",
+      "name": "羽族",
+      "bodyId": "BODY_BEAST_04",
+      "skeletonId": "WINGED",
+      "status": "確定示例",
+      "minWidth": 7,
+      "maxWidth": 8,
+      "minHeight": 5,
+      "maxHeight": 7,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S006",
+      "familyId": "F01",
+      "name": "矮人族",
+      "bodyId": "BODY_HUM_01",
+      "skeletonId": "HUMANOID",
+      "status": "確定示例",
+      "minWidth": 7,
+      "maxWidth": 9,
+      "minHeight": 5,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S007",
+      "familyId": "F03",
+      "name": "樹人",
+      "bodyId": "BODY_ELF_01",
+      "skeletonId": "TREE",
+      "status": "確定示例",
+      "minWidth": 7,
+      "maxWidth": 9,
+      "minHeight": 5,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S008",
+      "familyId": "F04",
+      "name": "龍人",
+      "bodyId": "BODY_DRAGON_01",
+      "skeletonId": "DRAGON",
+      "status": "確定示例",
+      "minWidth": 7,
+      "maxWidth": 10,
+      "minHeight": 6,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S009",
+      "familyId": "F05",
+      "name": "狐仙",
+      "bodyId": "BODY_MIX_01",
+      "skeletonId": "HUMANOID",
+      "status": "造型占位，未定種族",
+      "minWidth": 6,
+      "maxWidth": 9,
+      "minHeight": 6,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S010",
+      "familyId": "F05",
+      "name": "貓妖",
+      "bodyId": "BODY_MIX_02",
+      "skeletonId": "HUMANOID",
+      "status": "造型占位，未定種族",
+      "minWidth": 6,
+      "maxWidth": 9,
+      "minHeight": 6,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S011",
+      "familyId": "F05",
+      "name": "混血外觀型3",
+      "bodyId": "BODY_MIX_03",
+      "skeletonId": "HUMANOID",
+      "status": "造型占位，未定種族",
+      "minWidth": 8,
+      "maxWidth": 10,
+      "minHeight": 5,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S012",
+      "familyId": "F05",
+      "name": "混血外觀型4",
+      "bodyId": "BODY_MIX_04",
+      "skeletonId": "HUMANOID",
+      "status": "造型占位，未定種族",
+      "minWidth": 8,
+      "maxWidth": 10,
+      "minHeight": 5,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S013",
+      "familyId": "F05",
+      "name": "混血外觀型5",
+      "bodyId": "BODY_MIX_05",
+      "skeletonId": "HUMANOID",
+      "status": "造型占位，未定種族",
+      "minWidth": 8,
+      "maxWidth": 10,
+      "minHeight": 5,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S014",
+      "familyId": "F03",
+      "name": "精靈族",
+      "bodyId": "BODY_BEAST_05",
+      "skeletonId": "HUMANOID",
+      "status": "確定示例",
+      "minWidth": 6,
+      "maxWidth": 9,
+      "minHeight": 6,
+      "maxHeight": 7,
+      "weight": 10,
+      "enabled": true
+    },
+    {
+      "id": "S015",
+      "familyId": "F03",
+      "name": "黑暗精靈族",
+      "bodyId": "BODY_BEAST_05",
+      "skeletonId": "HUMANOID",
+      "status": "確定示例",
+      "minWidth": 6,
+      "maxWidth": 9,
+      "minHeight": 6,
+      "maxHeight": 8,
+      "weight": 10,
+      "enabled": true
+    }
+  ],
+  "abilities": [
+    {
+      "id": "HP",
+      "name": "血量",
+      "baseline": 100,
+      "perPoint": 5,
+      "min": 5,
+      "max": 100,
+      "zero": 0,
+      "enabled": true,
+      "status": "C:F保留使用者原值；D為每分提升量。H為可調試算預設值；初始分=(初始值-H)/D。"
+    },
+    {
+      "id": "MP",
+      "name": "魔力",
+      "baseline": 30,
+      "perPoint": 3,
+      "min": 3,
+      "max": 48,
+      "zero": 0,
+      "enabled": true,
+      "status": "C:F保留使用者原值；D為每分提升量。H為可調試算預設值；初始分=(初始值-H)/D。"
+    },
+    {
+      "id": "HP_REGEN",
+      "name": "HP回復",
+      "baseline": 0,
+      "perPoint": 2,
+      "min": 0.5,
+      "max": 20,
+      "zero": 0,
+      "enabled": true,
+      "status": "C:F保留使用者原值；D為每分提升量。H為可調試算預設值；初始分=(初始值-H)/D。"
+    },
+    {
+      "id": "MP_REGEN",
+      "name": "MP回復",
+      "baseline": 0,
+      "perPoint": 0.2,
+      "min": 0.2,
+      "max": 10,
+      "zero": 0,
+      "enabled": true,
+      "status": "C:F保留使用者原值；D為每分提升量。H為可調試算預設值；初始分=(初始值-H)/D。"
+    }
+  ],
+  "rarities": [
+    {
+      "id": "RAR_C",
+      "name": "普通",
+      "min": 0,
+      "max": 119,
+      "enabled": true,
+      "status": "可調試算預設值；依實際總分判定，不抽稀有度"
+    },
+    {
+      "id": "RAR_R",
+      "name": "稀有",
+      "min": 120,
+      "max": 199,
+      "enabled": true,
+      "status": "可調試算預設值；依實際總分判定，不抽稀有度"
+    },
+    {
+      "id": "RAR_E",
+      "name": "史詩",
+      "min": 200,
+      "max": 299,
+      "enabled": true,
+      "status": "可調試算預設值；依實際總分判定，不抽稀有度"
+    },
+    {
+      "id": "RAR_L",
+      "name": "傳說",
+      "min": 300,
+      "max": 399,
+      "enabled": true,
+      "status": "可調試算預設值；依實際總分判定，不抽稀有度"
+    },
+    {
+      "id": "RAR_M",
+      "name": "神話",
+      "min": 400,
+      "max": 999999,
+      "enabled": true,
+      "status": "可調試算預設值；依實際總分判定，不抽稀有度"
+    }
+  ],
+  "personalities": [
+    {
+      "id": "PER_01",
+      "name": "謹慎",
+      "visible": true,
+      "weight": 10,
+      "effectId": null,
+      "notes": "命中/成功率上升/耗材需求增加/以穩定為主的技能或需求）"
+    },
+    {
+      "id": "PER_02",
+      "name": "勇敢",
+      "visible": true,
+      "weight": 10,
+      "effectId": null,
+      "notes": "攻擊力/血量/血量恢復/防禦型技能/以探險類為主的技能或需求）"
+    },
+    {
+      "id": "PER_03",
+      "name": "勤奮",
+      "visible": true,
+      "weight": 10,
+      "effectId": null,
+      "notes": "角色成長/成功率上升/攻速提升/防禦類技能/包包偏大"
+    },
+    {
+      "id": "PER_04",
+      "name": "熱血",
+      "visible": true,
+      "weight": 10,
+      "effectId": null,
+      "notes": "爆擊力/減少血量/攻速提升"
+    },
+    {
+      "id": "PER_05",
+      "name": "聰穎",
+      "visible": true,
+      "weight": 10,
+      "effectId": null,
+      "notes": "法術攻擊/消耗需求減少/包包普遍小/法術相關技能或需求）"
+    },
+    {
+      "id": "PER_06",
+      "name": "好奇",
+      "visible": true,
+      "weight": 10,
+      "effectId": null,
+      "notes": "寶物發現/陷阱類發現/角色成長度低"
+    },
+    {
+      "id": "PER_07",
+      "name": "貪婪",
+      "visible": true,
+      "weight": 10,
+      "effectId": null,
+      "notes": "聘僱金額高/獲得金幣量提升/角色能力高/角色成長高/"
+    },
+    {
+      "id": "PER_08",
+      "name": "虔誠",
+      "visible": true,
+      "weight": 10,
+      "effectId": null,
+      "notes": "魔力恢復高/技能效果提升/平均型角色"
+    },
+    {
+      "id": "PER_09",
+      "name": "陰冷",
+      "visible": true,
+      "weight": 10,
+      "effectId": null,
+      "notes": "命中率/爆擊傷害/包包偏小/"
+    },
+    {
+      "id": "PER_10",
+      "name": "樂天",
+      "visible": true,
+      "weight": 10,
+      "effectId": null,
+      "notes": "迴避率/探險需求技能/平均型角色"
+    }
+  ],
+  "options": [
+    {
+      "id": "HAIRC_01",
+      "category": "髮色",
+      "name": "黑",
+      "value": "#252525",
+      "weight": 10,
+      "enabled": true,
+      "families": "全部",
+      "notes": "可用調色板換色"
+    },
+    {
+      "id": "HAIRC_02",
+      "category": "髮色",
+      "name": "棕",
+      "value": "#65432D",
+      "weight": 10,
+      "enabled": true,
+      "families": "全部",
+      "notes": "可用調色板換色"
+    },
+    {
+      "id": "HAIRC_03",
+      "category": "髮色",
+      "name": "金",
+      "value": "#D7B45A",
+      "weight": 10,
+      "enabled": true,
+      "families": "全部",
+      "notes": "可用調色板換色"
+    },
+    {
+      "id": "HAIRC_04",
+      "category": "髮色",
+      "name": "白",
+      "value": "#E5E5E5",
+      "weight": 10,
+      "enabled": true,
+      "families": "全部",
+      "notes": "可用調色板換色"
+    },
+    {
+      "id": "SKINC_01",
+      "category": "膚色",
+      "name": "淺",
+      "value": "#E7BDA1",
+      "weight": 10,
+      "enabled": true,
+      "families": "全部",
+      "notes": "特殊族系可限制"
+    },
+    {
+      "id": "SKINC_02",
+      "category": "膚色",
+      "name": "中",
+      "value": "#AF7B59",
+      "weight": 10,
+      "enabled": true,
+      "families": "全部",
+      "notes": "特殊族系可限制"
+    },
+    {
+      "id": "SKINC_03",
+      "category": "膚色",
+      "name": "深",
+      "value": "#715042",
+      "weight": 10,
+      "enabled": true,
+      "families": "全部",
+      "notes": "特殊族系可限制"
+    },
+    {
+      "id": "EYEC_01",
+      "category": "眼睛",
+      "name": "棕",
+      "value": "#68462E",
+      "weight": 10,
+      "enabled": true,
+      "families": "全部",
+      "notes": "小尺寸像素圖可能無法辨識"
+    },
+    {
+      "id": "EYEC_02",
+      "category": "眼睛",
+      "name": "藍",
+      "value": "#467DB3",
+      "weight": 10,
+      "enabled": true,
+      "families": "全部",
+      "notes": "小尺寸像素圖可能無法辨識"
+    },
+    {
+      "id": "EYEC_03",
+      "category": "眼睛",
+      "name": "金",
+      "value": "#D5A33C",
+      "weight": 10,
+      "enabled": true,
+      "families": "全部",
+      "notes": "小尺寸像素圖可能無法辨識"
+    }
+  ],
+  "assets": [
+    {
+      "id": "BODY_HUM_01",
+      "type": "身體",
+      "familyId": "F01",
+      "speciesId": "S001",
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/bodies/BODY_HUM_01.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_BEAST_01",
+      "type": "身體",
+      "familyId": "F02",
+      "speciesId": "S002",
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/bodies/BODY_BEAST_01.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_BEAST_02",
+      "type": "身體",
+      "familyId": "F02",
+      "speciesId": "S003",
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/bodies/BODY_BEAST_02.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_BEAST_03",
+      "type": "身體",
+      "familyId": "F02",
+      "speciesId": "S004",
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/bodies/BODY_BEAST_03.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_BEAST_04",
+      "type": "身體",
+      "familyId": "F02",
+      "speciesId": "S005",
+      "skeletonId": "WINGED",
+      "path": "assets/characters/bodies/BODY_BEAST_04.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_BEAST_05",
+      "type": "身體",
+      "familyId": "F02",
+      "speciesId": "S006",
+      "skeletonId": "QUADRUPED",
+      "path": "assets/characters/bodies/BODY_BEAST_05.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_ELF_01",
+      "type": "身體",
+      "familyId": "F03",
+      "speciesId": "S007",
+      "skeletonId": "TREE",
+      "path": "assets/characters/bodies/BODY_ELF_01.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_DRAGON_01",
+      "type": "身體",
+      "familyId": "F04",
+      "speciesId": "S008",
+      "skeletonId": "DRAGON",
+      "path": "assets/characters/bodies/BODY_DRAGON_01.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_MIX_01",
+      "type": "身體",
+      "familyId": "F05",
+      "speciesId": "S009",
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/bodies/BODY_MIX_01.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_MIX_02",
+      "type": "身體",
+      "familyId": "F05",
+      "speciesId": "S010",
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/bodies/BODY_MIX_02.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_MIX_03",
+      "type": "身體",
+      "familyId": "F05",
+      "speciesId": "S011",
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/bodies/BODY_MIX_03.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_MIX_04",
+      "type": "身體",
+      "familyId": "F05",
+      "speciesId": "S012",
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/bodies/BODY_MIX_04.png",
+      "status": "待製作"
+    },
+    {
+      "id": "BODY_MIX_05",
+      "type": "身體",
+      "familyId": "F05",
+      "speciesId": "S013",
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/bodies/BODY_MIX_05.png",
+      "status": "待製作"
+    },
+    {
+      "id": "HAIR_STYLE_01",
+      "type": "髮型",
+      "familyId": "全部",
+      "speciesId": null,
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/hair/HAIR_STYLE_01.png",
+      "status": "待製作"
+    },
+    {
+      "id": "EYES_BASIC_01",
+      "type": "眼睛",
+      "familyId": "全部",
+      "speciesId": null,
+      "skeletonId": "HUMANOID",
+      "path": "assets/characters/eyes/EYES_BASIC_01.png",
+      "status": "待製作"
+    }
+  ],
+  "skeletons": [
+    {
+      "id": "HUMANOID",
+      "name": "雙足人形",
+      "status": "規劃"
+    },
+    {
+      "id": "WINGED",
+      "name": "翼形",
+      "status": "規劃"
+    },
+    {
+      "id": "QUADRUPED",
+      "name": "四足",
+      "status": "規劃"
+    },
+    {
+      "id": "TREE",
+      "name": "樹人",
+      "status": "規劃"
+    },
+    {
+      "id": "DRAGON",
+      "name": "龍形",
+      "status": "規劃"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "VIS_001",
+      "familyId": "F01",
+      "speciesId": "S001",
+      "skeletonId": "HUMANOID",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_002",
+      "familyId": "F02",
+      "speciesId": "S002",
+      "skeletonId": "HUMANOID",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_003",
+      "familyId": "F02",
+      "speciesId": "S003",
+      "skeletonId": "HUMANOID",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_004",
+      "familyId": "F02",
+      "speciesId": "S004",
+      "skeletonId": "HUMANOID",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_005",
+      "familyId": "F02",
+      "speciesId": "S005",
+      "skeletonId": "WINGED",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_006",
+      "familyId": "F02",
+      "speciesId": "S006",
+      "skeletonId": "QUADRUPED",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_007",
+      "familyId": "F03",
+      "speciesId": "S007",
+      "skeletonId": "TREE",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_008",
+      "familyId": "F04",
+      "speciesId": "S008",
+      "skeletonId": "DRAGON",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_009",
+      "familyId": "F05",
+      "speciesId": "S009",
+      "skeletonId": "HUMANOID",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_010",
+      "familyId": "F05",
+      "speciesId": "S010",
+      "skeletonId": "HUMANOID",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_011",
+      "familyId": "F05",
+      "speciesId": "S011",
+      "skeletonId": "HUMANOID",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_012",
+      "familyId": "F05",
+      "speciesId": "S012",
+      "skeletonId": "HUMANOID",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    },
+    {
+      "id": "VIS_013",
+      "familyId": "F05",
+      "speciesId": "S013",
+      "skeletonId": "HUMANOID",
+      "hair": "HAIR_STYLE_01",
+      "hairColor": "HAIRC_*",
+      "skinColor": "SKINC_*",
+      "eyes": "EYEC_*",
+      "enabled": true,
+      "notes": "* 表示對應選項表的啟用項；實際適用性待美術確認"
+    }
+  ],
+  "skills": [
+    {
+      "id": "K001",
+      "name": "變身",
+      "effect": "限時改變外觀，獲得大量能力加成",
+      "status": "確定",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K002",
+      "name": "元素召喚",
+      "effect": "產生元素戰鬥單位，自動攻擊敵方 NPC",
+      "status": "確定",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K003",
+      "name": "亡體召喚",
+      "effect": "召喚或驅動亡體，自動攻擊敵方 NPC",
+      "status": "確定",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K004",
+      "name": "契約召喚",
+      "effect": "召喚契約生命，自動攻擊敵方 NPC",
+      "status": "確定",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K005",
+      "name": "環繞元素球",
+      "effect": "元素球環繞角色，依設定自動攻擊或接觸造成效果",
+      "status": "確定",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K006",
+      "name": "隱匿",
+      "effect": "限時降低或消除敵方對角色的發現能力",
+      "status": "確定",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K007",
+      "name": "分身",
+      "effect": "產生角色分身，依設定自動戰鬥",
+      "status": "確定",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K008",
+      "name": "地形改造",
+      "effect": "生成或改變地圖物件及地形",
+      "status": "確定",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K009",
+      "name": "飛行",
+      "effect": "限時提高移動速度，以飛行動畫呈現",
+      "status": "確定",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K010",
+      "name": "控制",
+      "effect": "干擾或改變敵方 NPC 行為",
+      "status": "待定",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K011",
+      "name": "時間操縱",
+      "effect": "時間停止／倒轉",
+      "status": "排除",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K012",
+      "name": "穿牆",
+      "effect": "穿越實體牆壁",
+      "status": "排除",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K013",
+      "name": "火球／冰錐",
+      "effect": "單體或範圍元素傷害",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K014",
+      "name": "連鎖閃電",
+      "effect": "攻擊目標後跳躍至附近敵人",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K015",
+      "name": "毒霧",
+      "effect": "區域內持續傷害或中毒",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K016",
+      "name": "旋風斬／突刺",
+      "effect": "近戰範圍或方向攻擊",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K017",
+      "name": "護盾",
+      "effect": "吸收部分傷害",
+      "status": "候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "五級效果見技能等級效果；暫定且未實作"
+    },
+    {
+      "id": "K018",
+      "name": "反傷／格擋",
+      "effect": "反彈或降低受到的傷害",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K019",
+      "name": "治癒",
+      "effect": "恢復生命值",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K020",
+      "name": "持續再生",
+      "effect": "持續恢復生命值",
+      "status": "候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "五級效果見技能等級效果；暫定且未實作"
+    },
+    {
+      "id": "K021",
+      "name": "吸血",
+      "effect": "造成傷害時回復自身生命",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K022",
+      "name": "淨化",
+      "effect": "移除指定負面效果",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K023",
+      "name": "嘲諷",
+      "effect": "提高敵人攻擊自身的傾向",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K024",
+      "name": "恐懼／混亂",
+      "effect": "使敵人逃離或攻擊錯誤目標",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K025",
+      "name": "魅惑",
+      "effect": "使敵人短暫轉為友方自動戰鬥",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K026",
+      "name": "擊退／拉扯",
+      "effect": "強制改變目標位置",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K027",
+      "name": "沉默／緩速",
+      "effect": "限制技能或降低速度",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K028",
+      "name": "生命偵測",
+      "effect": "暫時顯示附近敵人位置",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K029",
+      "name": "寶物／陷阱感知",
+      "effect": "標示附近寶箱或陷阱",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K030",
+      "name": "自動拾取",
+      "effect": "吸取附近掉落物",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K031",
+      "name": "傳送回城",
+      "effect": "返回安全區域",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K032",
+      "name": "誘敵",
+      "effect": "吸引附近敵人聚集",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K033",
+      "name": "探索照明",
+      "effect": "提高可見範圍",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K034",
+      "name": "瀕死護盾",
+      "effect": "生命低於門檻自動生成護盾",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K035",
+      "name": "持續耗魔狂暴",
+      "effect": "持續消耗 MP 以獲得強化",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K036",
+      "name": "元素連鎖",
+      "effect": "特定狀態與攻擊組合觸發額外效果",
+      "status": "候選",
+      "enabled": false,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "待設定",
+      "costStatus": "可調試算預設值；施放消耗未確認"
+    },
+    {
+      "id": "K037",
+      "name": "強健",
+      "effect": "以未套用本技能的最大HP計算；取得時不自動補血。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K038",
+      "name": "魔力充盈",
+      "effect": "以未套用本技能的最大MP計算；取得時不自動補魔。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K039",
+      "name": "自癒",
+      "effect": "固定加值；滿血時不累積。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K040",
+      "name": "魔力湧泉",
+      "effect": "固定加值；滿魔時不累積。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K041",
+      "name": "輕盈",
+      "effect": "不同來源移速加成相加；全局上限另定。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K042",
+      "name": "堅韌",
+      "effect": "僅物理傷害；不同來源減免採乘算，全局上限另定。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K043",
+      "name": "元素抗性",
+      "effect": "出生時火、冰、雷等權重固定一種；升級不重抽，非全抗。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K044",
+      "name": "節能施法",
+      "effect": "不影響HP、物品消耗或角色生成成本。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K045",
+      "name": "熟練施法",
+      "effect": "不影響條件被動的內置冷卻。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K046",
+      "name": "召喚強化",
+      "effect": "無召喚能力也可抽到；暫無組合保證。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K047",
+      "name": "背水一戰",
+      "effect": "HP嚴格低於最大HP的30%時生效；回到門檻即解除。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K048",
+      "name": "擊殺回復",
+      "effect": "內置冷卻1秒；召喚物、分身、場景物件擊殺不觸發。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K049",
+      "name": "靜止回魔",
+      "effect": "連續靜止2秒後生效；移動立即解除，施法不解除。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K050",
+      "name": "疾行",
+      "effect": "不同來源移速加成相加；全局上限另定。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K051",
+      "name": "狂熱",
+      "effect": "期間承受傷害固定增加10%；與傷害加成分開計算。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    },
+    {
+      "id": "K052",
+      "name": "元素附魔",
+      "effect": "出生時火、冰、雷等權重固定一種；按抗性結算前傷害附加，不遞迴觸發，不套召喚物。",
+      "status": "新增候選",
+      "enabled": true,
+      "cost": 30,
+      "bindingType": "無",
+      "castHP": 0,
+      "castMP": 0,
+      "itemId": null,
+      "itemCount": 0,
+      "consumption": "見技能等級效果",
+      "costStatus": "暫定測試值；效果未實作"
+    }
+  ],
+  "talents": [
+    {
+      "id": "TAL_TRANSFORM",
+      "name": "專屬變身",
+      "skillId": "K001",
+      "owner": "角色",
+      "targetType": "形態ID",
+      "exampleTargetId": "FORM_001",
+      "enabled": true,
+      "weight": 1,
+      "status": "草案",
+      "notes": "只有被抽中者擁有專屬形態；形態效果未定",
+      "cost": 30
+    },
+    {
+      "id": "TAL_CONTRACT",
+      "name": "先天契約",
+      "skillId": "K004",
+      "owner": "角色＋契約對象",
+      "targetType": "召喚物ID",
+      "exampleTargetId": "SUMMON_001",
+      "enabled": true,
+      "weight": 1,
+      "status": "草案",
+      "notes": "契約對象與角色綁定；一般召喚術不等於獲得此契約",
+      "cost": 30
+    },
+    {
+      "id": "TAL_TOUGH",
+      "name": "強韌體魄",
+      "skillId": "SKILL_TOUGH",
+      "owner": "角色",
+      "targetType": "無",
+      "exampleTargetId": null,
+      "enabled": true,
+      "weight": 10,
+      "status": "候選",
+      "notes": "保留舊版天賦名稱",
+      "cost": 30
+    },
+    {
+      "id": "TAL_MANA",
+      "name": "魔力親和",
+      "skillId": "SKILL_MANA",
+      "owner": "角色",
+      "targetType": "無",
+      "exampleTargetId": null,
+      "enabled": true,
+      "weight": 10,
+      "status": "候選",
+      "notes": "保留舊版天賦名稱",
+      "cost": 30
+    },
+    {
+      "id": "TAL_COUNTER",
+      "name": "迅捷反擊",
+      "skillId": "SKILL_COUNTER",
+      "owner": "角色",
+      "targetType": "無",
+      "exampleTargetId": null,
+      "enabled": true,
+      "weight": 10,
+      "status": "候選",
+      "notes": "保留舊版天賦名稱",
+      "cost": 30
+    },
+    {
+      "id": "TAL_PACK",
+      "name": "靈巧整理",
+      "skillId": "SKILL_PACK",
+      "owner": "角色",
+      "targetType": "無",
+      "exampleTargetId": null,
+      "enabled": true,
+      "weight": 10,
+      "status": "候選",
+      "notes": "保留舊版天賦名稱",
+      "cost": 30
+    }
+  ],
+  "parameters": [
+    {
+      "id": "頁面最大寬",
+      "value": 10,
+      "status": "保留V4使用者數值；換算與保留額為可調試算預設值"
+    },
+    {
+      "id": "頁面最大高",
+      "value": 8,
+      "status": "保留V4使用者數值；換算與保留額為可調試算預設值"
+    },
+    {
+      "id": "每格背包成本",
+      "value": 2,
+      "status": "保留V4使用者數值；換算與保留額為可調試算預設值"
+    },
+    {
+      "id": "免費背包格數",
+      "value": 35,
+      "status": "保留V4使用者數值；換算與保留額為可調試算預設值"
+    },
+    {
+      "id": "操作區由獨立系統設定",
+      "value": null,
+      "status": "保留V4使用者數值；換算與保留額為可調試算預設值"
+    },
+    {
+      "id": "最低保留能力分",
+      "value": 40,
+      "status": "保留V4使用者數值；換算與保留額為可調試算預設值"
+    },
+    {
+      "id": "最低保留成長分",
+      "value": 5,
+      "status": "保留V4使用者數值；換算與保留額為可調試算預設值"
+    },
+    {
+      "id": "天賦預留分",
+      "value": 0,
+      "status": "保留V4使用者數值；換算與保留額為可調試算預設值"
+    },
+    {
+      "id": "尺寸偏好強度",
+      "value": 1.5,
+      "status": "保留V4使用者數值；換算與保留額為可調試算預設值"
+    },
+    {
+      "id": "綁定技能預設成本",
+      "value": 30,
+      "status": "可調試算預設值；生成時扣預算，計入技能詞綴價值"
+    },
+    {
+      "id": "背包計分倍率",
+      "value": 1.1111111111111112,
+      "status": "可調試算預設值；80格按原式90分校準為100分"
+    },
+    {
+      "id": "隱藏每分成長增幅",
+      "value": 0.01,
+      "status": "可調試算預設值；每分提高實際每級成長1%"
+    },
+    {
+      "id": "培養目標等級",
+      "value": 10,
+      "status": "可調試算預設值"
+    },
+    {
+      "id": "成長成本每級倍率",
+      "value": 1,
+      "status": "可調試算預設值"
+    }
+  ],
+  "growth": [
+    {
+      "id": "D",
+      "HP": 1,
+      "MP": 0.5,
+      "HP_REGEN": 0.05,
+      "MP_REGEN": 0.02,
+      "cost": 0,
+      "status": "可調試算預設值"
+    },
+    {
+      "id": "C",
+      "HP": 2,
+      "MP": 1,
+      "HP_REGEN": 0.1,
+      "MP_REGEN": 0.04,
+      "cost": 5,
+      "status": "可調試算預設值"
+    },
+    {
+      "id": "B",
+      "HP": 3,
+      "MP": 1.5,
+      "HP_REGEN": 0.15,
+      "MP_REGEN": 0.06,
+      "cost": 10,
+      "status": "可調試算預設值"
+    },
+    {
+      "id": "A",
+      "HP": 4,
+      "MP": 2,
+      "HP_REGEN": 0.2,
+      "MP_REGEN": 0.08,
+      "cost": 15,
+      "status": "可調試算預設值"
+    },
+    {
+      "id": "S",
+      "HP": 5,
+      "MP": 2.5,
+      "HP_REGEN": 0.25,
+      "MP_REGEN": 0.1,
+      "cost": 20,
+      "status": "可調試算預設值"
+    }
+  ],
+  "validation": {
+    "warnings": [
+      {
+        "code": "BASELINE_OUTSIDE_RANGE",
+        "table": "abilities",
+        "id": "HP_REGEN",
+        "message": "Baseline is not used for random values"
+      },
+      {
+        "code": "BASELINE_OUTSIDE_RANGE",
+        "table": "abilities",
+        "id": "MP_REGEN",
+        "message": "Baseline is not used for random values"
+      },
+      {
+        "code": "VISUAL_MISMATCH",
+        "table": "species",
+        "id": "S006",
+        "message": "VIS_006"
+      },
+      {
+        "code": "BODY_MAPPING_REVIEW",
+        "table": "species",
+        "id": "S006",
+        "message": "BODY_HUM_01"
+      },
+      {
+        "code": "MISSING_VISUAL_RULE",
+        "table": "species",
+        "id": "S014",
+        "message": "Use text placeholder"
+      },
+      {
+        "code": "BODY_MAPPING_REVIEW",
+        "table": "species",
+        "id": "S014",
+        "message": "BODY_BEAST_05"
+      },
+      {
+        "code": "MISSING_VISUAL_RULE",
+        "table": "species",
+        "id": "S015",
+        "message": "Use text placeholder"
+      },
+      {
+        "code": "BODY_MAPPING_REVIEW",
+        "table": "species",
+        "id": "S015",
+        "message": "BODY_BEAST_05"
+      },
+      {
+        "code": "UNRESOLVED_BINDING",
+        "table": "talents",
+        "id": "TAL_TRANSFORM",
+        "message": "No target catalogue; example ID is not an actual binding"
+      },
+      {
+        "code": "UNRESOLVED_BINDING",
+        "table": "talents",
+        "id": "TAL_CONTRACT",
+        "message": "No target catalogue; example ID is not an actual binding"
+      },
+      {
+        "code": "MISSING_TALENT_SKILL",
+        "table": "talents",
+        "id": "TAL_TOUGH",
+        "message": "Excluded: SKILL_TOUGH"
+      },
+      {
+        "code": "MISSING_TALENT_SKILL",
+        "table": "talents",
+        "id": "TAL_MANA",
+        "message": "Excluded: SKILL_MANA"
+      },
+      {
+        "code": "MISSING_TALENT_SKILL",
+        "table": "talents",
+        "id": "TAL_COUNTER",
+        "message": "Excluded: SKILL_COUNTER"
+      },
+      {
+        "code": "MISSING_TALENT_SKILL",
+        "table": "talents",
+        "id": "TAL_PACK",
+        "message": "Excluded: SKILL_PACK"
+      }
+    ]
+  }
+}
