@@ -1,0 +1,11 @@
+{
+  "name": "rpg-character-generator-release",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test",
+    "build": "node tools/release.mjs build",
+    "verify:release": "node tools/release.mjs verify dist"
+  }
+}

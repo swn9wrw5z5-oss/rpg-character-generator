@@ -1,0 +1,66 @@
+name: Verify and optionally publish Pages
+
+# Manual only. Merging or pushing this workflow never publishes automatically.
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Publish reviewed dist to production (main only)'
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-reviewed-release
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout reviewed release source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Run dependency-free release checks
+        run: npm test
+      - name: Build both homepages
+        run: node tools/release.mjs build
+      - name: Verify exact public files, content and resource paths
+        run: node tools/release.mjs verify dist
+      - name: Upload only reviewed dist
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: dist
+          retention-days: 1
+
+  deploy:
+    if: ${{ github.ref == 'refs/heads/main' && inputs.publish == true }}
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Read approved Pages configuration without enabling it
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+        with:
+          enablement: false
+      - name: Publish the verified artifact
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
