@@ -1,0 +1,5 @@
+outputs/
+node_modules/
+*.tmp
+dist/
+.test-tools/

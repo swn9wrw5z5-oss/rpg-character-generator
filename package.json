@@ -1,0 +1,11 @@
+{
+  "name": "rpg-character-generator-integration",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test",
+    "build": "node tools/build-integration.mjs",
+    "start": "node tools/serve-integration.mjs"
+  }
+}

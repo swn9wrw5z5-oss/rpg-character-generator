@@ -1,0 +1,2 @@
+# Preserve the pinned V5 snapshot exactly across Windows/Linux checkouts.
+/v5/** -text

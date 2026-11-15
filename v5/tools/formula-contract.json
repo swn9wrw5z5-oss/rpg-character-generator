@@ -1,0 +1,14 @@
+{
+    "B7":  "MAX(0,B4*B5-計分參數!B5)*計分參數!B4*計分參數!B12",
+    "B12":  "(B8-基礎能力!H2)/基礎能力!D2+(B9-基礎能力!H3)/基礎能力!D3+(B10-基礎能力!H4)/基礎能力!D4+(B11-基礎能力!H5)/基礎能力!D5",
+    "B13":  "IF(B21=\"\",0,VLOOKUP(B21,技能效果索引!$A$2:$R$37,12,FALSE))+IF(B22=\"\",0,VLOOKUP(B22,技能效果索引!$A$2:$R$37,12,FALSE))+IF(B23=\"\",0,VLOOKUP(B23,技能效果索引!$A$2:$R$37,12,FALSE))+IF(B24=\"\",0,VLOOKUP(B24,技能效果索引!$A$2:$R$37,12,FALSE))+IF(B25=\"\",0,VLOOKUP(B25,技能效果索引!$A$2:$R$37,12,FALSE))",
+    "B14":  "VLOOKUP(B26,成長潛力!$A$2:$F$6,6,FALSE)+VLOOKUP(B27,成長潛力!$A$2:$F$6,6,FALSE)+VLOOKUP(B28,成長潛力!$A$2:$F$6,6,FALSE)+VLOOKUP(B29,成長潛力!$A$2:$F$6,6,FALSE)",
+    "B15":  "SUM(B7,B12:B14)",
+    "B16":  "B6-B15",
+    "B17":  "IF((IF(AND(INT(B15)\u003e=稀有度!D2,INT(B15)\u003c=稀有度!E2,稀有度!F2),1,0)+IF(AND(INT(B15)\u003e=稀有度!D3,INT(B15)\u003c=稀有度!E3,稀有度!F3),1,0)+IF(AND(INT(B15)\u003e=稀有度!D4,INT(B15)\u003c=稀有度!E4,稀有度!F4),1,0)+IF(AND(INT(B15)\u003e=稀有度!D5,INT(B15)\u003c=稀有度!E5,稀有度!F5),1,0)+IF(AND(INT(B15)\u003e=稀有度!D6,INT(B15)\u003c=稀有度!E6,稀有度!F6),1,0))\u003c\u003e1,\"區間缺漏或重疊\",IF(AND(INT(B15)\u003e=稀有度!D2,INT(B15)\u003c=稀有度!E2,稀有度!F2),稀有度!B2,IF(AND(INT(B15)\u003e=稀有度!D3,INT(B15)\u003c=稀有度!E3,稀有度!F3),稀有度!B3,IF(AND(INT(B15)\u003e=稀有度!D4,INT(B15)\u003c=稀有度!E4,稀有度!F4),稀有度!B4,IF(AND(INT(B15)\u003e=稀有度!D5,INT(B15)\u003c=稀有度!E5,稀有度!F5),稀有度!B5,IF(AND(INT(B15)\u003e=稀有度!D6,INT(B15)\u003c=稀有度!E6,稀有度!F6),稀有度!B6,\"未分類\"))))))",
+    "B18":  "IFERROR(IF(AND(OR(B21=\"\",AND(COUNTIF(技能效果索引!A2:A37,B21)=1,VLOOKUP(B21,技能效果索引!A2:R37,9,FALSE),COUNTIF(B21:B25,B21)=1)),OR(B22=\"\",AND(COUNTIF(技能效果索引!A2:A37,B22)=1,VLOOKUP(B22,技能效果索引!A2:R37,9,FALSE),COUNTIF(B21:B25,B22)=1)),OR(B23=\"\",AND(COUNTIF(技能效果索引!A2:A37,B23)=1,VLOOKUP(B23,技能效果索引!A2:R37,9,FALSE),COUNTIF(B21:B25,B23)=1)),OR(B24=\"\",AND(COUNTIF(技能效果索引!A2:A37,B24)=1,VLOOKUP(B24,技能效果索引!A2:R37,9,FALSE),COUNTIF(B21:B25,B24)=1)),OR(B25=\"\",AND(COUNTIF(技能效果索引!A2:A37,B25)=1,VLOOKUP(B25,技能效果索引!A2:R37,9,FALSE),COUNTIF(B21:B25,B25)=1)),VLOOKUP(B3,種族設定!A2:L16,12,FALSE),B17\u003c\u003e\"區間缺漏或重疊\",B19\u003e=1,B19=INT(B19)),IFERROR(IF(AND(B16\u003e=0,B4=INT(B4),B5=INT(B5),B4\u003e=VLOOKUP(B3,種族設定!A2:L16,7,FALSE),B4\u003c=VLOOKUP(B3,種族設定!A2:L16,8,FALSE),B5\u003e=VLOOKUP(B3,種族設定!A2:L16,9,FALSE),B5\u003c=VLOOKUP(B3,種族設定!A2:L16,10,FALSE),B4\u003c=計分參數!B2,B5\u003c=計分參數!B3,B8\u003e=基礎能力!E2,B8\u003c=基礎能力!F2,B9\u003e=基礎能力!E3,B9\u003c=基礎能力!F3,B10\u003e=基礎能力!E4,B10\u003c=基礎能力!F4,B11\u003e=基礎能力!E5,B11\u003c=基礎能力!F5,COUNTIF(技能效果索引!A2:A37,B21)=1),\"可生成\",\"需調整輸入或預算\"),\"引用或參數錯誤\"),\"技能、種族、等級或區間無效\"),\"引用或參數錯誤\")",
+    "B20":  "B8+MAX(0,B19-1)*VLOOKUP(B26,成長潛力!$A$2:$F$6,2,FALSE)*(1+B14*計分參數!B13)",
+    "B30":  "B9+MAX(0,B19-1)*VLOOKUP(B27,成長潛力!$A$2:$F$6,3,FALSE)*(1+B14*計分參數!B13)",
+    "B31":  "B10+MAX(0,B19-1)*VLOOKUP(B28,成長潛力!$A$2:$F$6,4,FALSE)*(1+B14*計分參數!B13)",
+    "B32":  "B11+MAX(0,B19-1)*VLOOKUP(B29,成長潛力!$A$2:$F$6,5,FALSE)*(1+B14*計分參數!B13)"
+}

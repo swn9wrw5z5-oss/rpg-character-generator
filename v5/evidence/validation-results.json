@@ -1,0 +1,242 @@
+﻿{
+    "sourceSha256":  "E9C3930785B558DAEEA609BA8CB09828CBCB9D031C037FCA4BEB56E453404952",
+    "sheetCount":  21,
+    "recordCounts":  {
+                         "成長潛力":  5,
+                         "動畫骨架":  5,
+                         "美術素材庫":  15,
+                         "個性":  10,
+                         "計分參數":  14,
+                         "外觀選項":  10,
+                         "族系":  5,
+                         "基礎能力":  4,
+                         "外觀生成規則":  13,
+                         "種族設定":  15,
+                         "稀有度":  5,
+                         "技能效果索引":  36,
+                         "先天天賦與綁定":  6
+                     },
+    "issues":  [
+                   {
+                       "code":  "MISSING_REFERENCE",
+                       "location":  "先天天賦與綁定 row 4",
+                       "detail":  "對應技能ID=SKILL_TOUGH"
+                   },
+                   {
+                       "code":  "MISSING_REFERENCE",
+                       "location":  "先天天賦與綁定 row 5",
+                       "detail":  "對應技能ID=SKILL_MANA"
+                   },
+                   {
+                       "code":  "MISSING_REFERENCE",
+                       "location":  "先天天賦與綁定 row 6",
+                       "detail":  "對應技能ID=SKILL_COUNTER"
+                   },
+                   {
+                       "code":  "MISSING_REFERENCE",
+                       "location":  "先天天賦與綁定 row 7",
+                       "detail":  "對應技能ID=SKILL_PACK"
+                   },
+                   {
+                       "code":  "VISUAL_MISMATCH",
+                       "location":  "S006",
+                       "detail":  "VIS_006"
+                   },
+                   {
+                       "code":  "BODY_MAPPING_REVIEW",
+                       "location":  "S006",
+                       "detail":  "BODY_HUM_01"
+                   },
+                   {
+                       "code":  "MISSING_VISUAL_RULE",
+                       "location":  "S014",
+                       "detail":  "no rule"
+                   },
+                   {
+                       "code":  "BODY_MAPPING_REVIEW",
+                       "location":  "S014",
+                       "detail":  "BODY_BEAST_05"
+                   },
+                   {
+                       "code":  "MISSING_VISUAL_RULE",
+                       "location":  "S015",
+                       "detail":  "no rule"
+                   },
+                   {
+                       "code":  "BODY_MAPPING_REVIEW",
+                       "location":  "S015",
+                       "detail":  "BODY_BEAST_05"
+                   }
+               ],
+    "tests":  [
+                  {
+                      "name":  "bag",
+                      "actual":  100,
+                      "expected":  100,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "base",
+                      "actual":  31.25,
+                      "expected":  31.25,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "skills",
+                      "actual":  150,
+                      "expected":  150,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "potential",
+                      "actual":  50,
+                      "expected":  50,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "total",
+                      "actual":  331.25,
+                      "expected":  331.25,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "remaining budget",
+                      "actual":  68.75,
+                      "expected":  68.75,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 0",
+                      "actual":  "RAR_C",
+                      "expected":  "RAR_C",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 119.999",
+                      "actual":  "RAR_C",
+                      "expected":  "RAR_C",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 120",
+                      "actual":  "RAR_R",
+                      "expected":  "RAR_R",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 199.999",
+                      "actual":  "RAR_R",
+                      "expected":  "RAR_R",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 200",
+                      "actual":  "RAR_E",
+                      "expected":  "RAR_E",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 299.999",
+                      "actual":  "RAR_E",
+                      "expected":  "RAR_E",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 300",
+                      "actual":  "RAR_L",
+                      "expected":  "RAR_L",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 399.999",
+                      "actual":  "RAR_L",
+                      "expected":  "RAR_L",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 400",
+                      "actual":  "RAR_M",
+                      "expected":  "RAR_M",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 999999",
+                      "actual":  "RAR_M",
+                      "expected":  "RAR_M",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity 1000000",
+                      "actual":  "INVALID",
+                      "expected":  "INVALID",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "rarity -0.1",
+                      "actual":  "INVALID",
+                      "expected":  "INVALID",
+                      "pass":  true
+                  },
+                  {
+                      "name":  "workbook sum row 2",
+                      "actual":  100,
+                      "expected":  100,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "workbook sum row 3",
+                      "actual":  400,
+                      "expected":  400,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "workbook sum row 4",
+                      "actual":  100,
+                      "expected":  100,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "workbook sum row 5",
+                      "actual":  200,
+                      "expected":  200,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "workbook sum row 6",
+                      "actual":  0,
+                      "expected":  0,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "workbook sum row 7",
+                      "actual":  119,
+                      "expected":  119,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "workbook sum row 8",
+                      "actual":  120,
+                      "expected":  120,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "workbook sum row 9",
+                      "actual":  200,
+                      "expected":  200,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "workbook sum row 10",
+                      "actual":  300,
+                      "expected":  300,
+                      "pass":  true
+                  },
+                  {
+                      "name":  "workbook sum row 11",
+                      "actual":  400,
+                      "expected":  400,
+                      "pass":  true
+                  }
+              ],
+    "note":  "Independent arithmetic and structural checks; no Excel engine recalculation. Not a production importer."
+}

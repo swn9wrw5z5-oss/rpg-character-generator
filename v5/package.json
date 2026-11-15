@@ -1,0 +1,18 @@
+{
+  "name": "rpg-character-generator-v5-core",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "export:v5": "node tools/export-v5.mjs",
+    "test": "node --test",
+    "generate": "node tools/generate.mjs",
+    "build": "node tools/build-web.mjs",
+    "start": "node tools/serve.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}
