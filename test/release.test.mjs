@@ -10,10 +10,10 @@ const data=JSON.parse(await readFile(new URL('../v5-legacy/data/v5.json',import.
 const config=JSON.parse(await readFile(new URL('../v5-legacy/config/test-parameters.json',import.meta.url),'utf8'));
 async function artifact(fn){const directory=await mkdtemp(join(tmpdir(),'rpg-clean-'));try{const output=await buildSite({output:join(directory,'public')});await fn(output);}finally{await rm(directory,{recursive:true,force:true});}}
 test('release sources: exact reviewed settings, code, relative resources and fourteen warnings',async()=>{
-  const report=await verifySite(root,{exact:false});assert.equal(report.files.length,44);assert.equal(report.warningCount,14);
+  const report=await verifySite(root,{exact:false});assert.equal(report.files.length,63);assert.equal(report.warningCount,14);
 });
 test('artifact: forty-four files only and byte-identical legacy homepage',()=>artifact(async output=>{
-  assert.equal((await verifySite(output)).files.length,44);assert.deepEqual(await readFile(join(output,'index.html')),await readFile(join(root,'index.html')));
+  assert.equal((await verifySite(output)).files.length,63);assert.deepEqual(await readFile(join(output,'index.html')),await readFile(join(root,'index.html')));
 }));
 test('source JSON contains no raw cells, reference sheets, file paths or coordinate metadata',()=>{
   assert.deepEqual(Object.keys(data.source),['sha256']);assert.ok(!('referenceSheets'in data));
@@ -47,7 +47,7 @@ test('artifact URLs: all forty-four files load below the GitHub Pages repository
 }));
 test('rebuild removes accidental internal files from generated dist',()=>artifact(async output=>{
   await mkdir(join(output,'evidence'));await writeFile(join(output,'evidence/unused.json'),'internal');
-  await buildSite({output});assert.equal((await verifySite(output)).files.length,44);
+  await buildSite({output});assert.equal((await verifySite(output)).files.length,63);
 }));
 test('build refuses to clean the repository source',()=>assert.rejects(buildSite({output:root}),/output must/));
 for(const [name,change] of [

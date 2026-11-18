@@ -1,0 +1,7 @@
+import {createAttributeGenerator} from './attributes-core.mjs';
+export async function summarizeBatch({data,parameters,settings,seed,count,speciesId=null,onYield=null,compare=null}){
+ if(!Number.isSafeInteger(count)||count<1||count>100000)throw new Error('批次數量須為1～100000');
+ const generator=createAttributeGenerator(data,parameters,settings,seed),groups=new Map(),levels=Object.fromEntries([1,2,3,4,5].map(l=>[l,0]));let mutated=0,skillCount=0,usage=0,downgraded=0;
+ for(let i=0;i<count;i++){const r=generator.generateAt(i,{speciesId});if(!r.ok)throw new Error(`第${i}名：${r.errors.map(e=>e.message).join(';')}`);const c=r.character;if(compare)compare(r,i);if(c.skills.length!==c.birthSkillSlots||c.skillBudget.spent>c.skillBudget.available)throw new Error('出生技能不變條件失敗');const g=groups.get(c.birthRarity.id)??{id:c.birthRarity.id,name:c.birthRarity.name,count:0,skills:0,remaining:0,levels:{1:0,2:0,3:0,4:0,5:0}};g.count++;g.skills+=c.skills.length;g.remaining+=c.skillBudget.remaining;for(const s of c.skills){levels[s.birthLevel]++;g.levels[s.birthLevel]++;}groups.set(g.id,g);skillCount+=c.skills.length;mutated+=Number(c.mutation.triggered);usage+=c.skillBudget.spent/c.skillBudget.available;downgraded+=r.calculation.skillAttempts.filter(s=>s.attempt.downgraded).length;if(onYield&&i%250===249)await onYield();}
+ return {seed,count,mutated,skillCountMean:skillCount/count,budgetUtilization:usage/count,levels,downgraded,rarities:[...groups.values()].map(g=>({...g,skillCountMean:g.skills/g.count,remainingMean:g.remaining/g.count}))};
+}

@@ -221,6 +221,102 @@
       "path": "v5-legacy/config/test-parameters.json",
       "sha256": "37b6a839e24b5bb4f25120c181369f153760ef243601eef687176af3b9588b6c",
       "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/index.html",
+      "sha256": "9ddd9a4e430077876c6933ca403e90dd19ddcbc10fc34eb3984a7ba521e6e1bb",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/web/attributes/app.mjs",
+      "sha256": "b5f631bb58c4ae5ae7800e20419f1b965d05c02c557f4ab302fc98d742db75f8",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/web/attributes/main.mjs",
+      "sha256": "06a1146b388306b2523d90666c5f3f7591376a380d7cf91519cc07f9db1c0eba",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/web/attributes/style.css",
+      "sha256": "4417e6163523c965ef1bbb8ee2fd76b8e7023802a2d2b1aaed75c2632ae03889",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/web/species-portrait.mjs",
+      "sha256": "784f0781ed83072db25cf8c202cb81869c84833ce0207c169877b0f4728cb3df",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/src/attributes-core.mjs",
+      "sha256": "5eed0cfb59d43c3c9b5f07caf00fc98e543a163720f760119656555fbcd3c446",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/src/attributes-statistics.mjs",
+      "sha256": "b279c5f2b50635b8fb7769ed6ae6456c2a07cb9a5f7329f12e82c12aee97ed06",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/src/core.mjs",
+      "sha256": "d2925053c53c93887e22d5588b016e7200d4b065e19ed195af4b4172790991dd",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/src/schema.mjs",
+      "sha256": "967913bac0b3c40bb6197baab1945f9c455edfd8ab44bdef9f3041a2af686cdb",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/src/validate.mjs",
+      "sha256": "2143a4f021ea47c027a8075c96b02f2e471de1d4555a3d12a2898ac22556bd0e",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/src/skill-core.mjs",
+      "sha256": "17a2d3865e294cd653a31f627e8724ecf68fc1af08361c602b0fd4e5b4a1167a",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/src/skill-rules.mjs",
+      "sha256": "54d80e10fbf8a0ac9c40a34c4c695155febde6d187451311c5cb84e62e9f2ed7",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/src/skill-reservation.mjs",
+      "sha256": "45d08bf9afa05e9d86f831da9f9c0950cd301a1e38df7cce45fa28b43ef9aa28",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/config/attributes-settings.json",
+      "sha256": "0cfcd07a38da0e80db66b41e92b7adcb0173dfe15289fbdf0cbc4b6f46561e06",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/config/fivelevels-parameters.json",
+      "sha256": "8090a3984b21709ad31bfb72157f9865c76305a2d8af5aeab429ba64f7b73218",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/config/species-icons.json",
+      "sha256": "85ffcc89da6712c66bff4d19297e3e75fd186f6d80b870baca90cd5757859140",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/data/fivelevels.json",
+      "sha256": "d929825957372889ca98494f40e1e7f279d81ad185be87a1ea26b8c08dbb3a70",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/assets/species/placeholder-fantasy.svg",
+      "sha256": "d32c59fc684d52bff7f765a65666e0199d02af5cbb31faaa1280526e55c62d17",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "attributes/assets/species/placeholder-pixel.svg",
+      "sha256": "9117cc5ae3165dfce899356edea0f6cd8afefd004f40c69b17bf55e9da7168cf",
+      "lineEndings": "lf-normalized"
     }
-  ]
+  ],
+  "attributesBase": "attributes/"
 }

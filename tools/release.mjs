@@ -22,7 +22,7 @@ function refuse(reason){throw new Error('RELEASE_REJECTED: '+reason);}
 function sha(bytes){return createHash('sha256').update(bytes).digest('hex');}
 function recordHash(bytes,record){return sha(record.lineEndings==='lf-normalized'?Buffer.from(bytes.toString('utf8').replace(/\r\n/g,'\n')):bytes);}
 function validManifest(){
-  if(manifest.version!==2||publicFiles.length!==44||new Set(publicFiles).size!==44||manifest.runtimeBase!=='v5/releases/fivelevels-v3-20261116/')refuse('invalid public manifest');
+  if(manifest.version!==2||manifest.attributesBase!=='attributes/'||new Set(publicFiles).size!==publicFiles.length||manifest.runtimeBase!=='v5/releases/fivelevels-v3-20261116/')refuse('invalid public manifest');
   for(const file of publicFiles)if(file.startsWith('/')||file.includes('\\')||file.split('/').includes('..'))refuse('unsafe manifest path');
 }
 export async function verifySite(directory,{exact=true}={}){
@@ -62,7 +62,7 @@ export async function verifySite(directory,{exact=true}={}){
     if(unsafe.some(pattern=>pattern.test(text)))refuse('credential pattern or local path: '+record.path);
     if(recordHash(bytes,record)!==record.sha256)refuse('unreviewed content: '+record.path);
     if(record.path.endsWith('.html')||record.path.endsWith('/web/app.mjs'))for(const match of text.matchAll(/\b(?:src|href)\s*=\s*["']([^"']+)["']/g))resource(match[1],record.path,record.path.endsWith('.mjs'));
-    if(record.path.startsWith(manifest.runtimeBase)&&/localhost|127\.0\.0\.1|\/api\/|node:|require\(|\.xlsx/i.test(text))refuse('local/server dependency in public runtime: '+record.path);
+    if((record.path.startsWith(manifest.runtimeBase)||record.path.startsWith(manifest.attributesBase))&&/localhost|127\.0\.0\.1|\/api\/|node:|require\(|\.xlsx/i.test(text))refuse('local/server dependency in public runtime: '+record.path);
     if(record.path.endsWith('.mjs')){
       for(const match of text.matchAll(/\bfrom\s*["']([^"']+)["']/g))resource(match[1],record.path);
       for(const match of text.matchAll(/new\s+URL\(\s*["']([^"']+)["']\s*,\s*import\.meta\.url\s*\)/g))resource(match[1],record.path);

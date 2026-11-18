@@ -1,0 +1,1477 @@
+{
+  "format": "rpg-attributes-settings-v1",
+  "attributes": {
+    "status": "暫定測試值",
+    "base": [
+      {
+        "id": "STR",
+        "name": "力量",
+        "birth": 5
+      },
+      {
+        "id": "VIT",
+        "name": "體質",
+        "birth": 5
+      },
+      {
+        "id": "INT",
+        "name": "智力",
+        "birth": 5
+      },
+      {
+        "id": "AGI",
+        "name": "敏捷",
+        "birth": 5
+      }
+    ],
+    "points": {
+      "starting": 10,
+      "perLevel": 5,
+      "levelCap": 100
+    },
+    "grades": [
+      {
+        "attribute": "STR",
+        "grade": "D",
+        "multiplier": 0.8,
+        "weight": 1
+      },
+      {
+        "attribute": "STR",
+        "grade": "C",
+        "multiplier": 1,
+        "weight": 1
+      },
+      {
+        "attribute": "STR",
+        "grade": "B",
+        "multiplier": 1.2,
+        "weight": 1
+      },
+      {
+        "attribute": "STR",
+        "grade": "A",
+        "multiplier": 1.4,
+        "weight": 1
+      },
+      {
+        "attribute": "STR",
+        "grade": "S",
+        "multiplier": 1.6,
+        "weight": 1
+      },
+      {
+        "attribute": "VIT",
+        "grade": "D",
+        "multiplier": 0.8,
+        "weight": 1
+      },
+      {
+        "attribute": "VIT",
+        "grade": "C",
+        "multiplier": 1,
+        "weight": 1
+      },
+      {
+        "attribute": "VIT",
+        "grade": "B",
+        "multiplier": 1.2,
+        "weight": 1
+      },
+      {
+        "attribute": "VIT",
+        "grade": "A",
+        "multiplier": 1.4,
+        "weight": 1
+      },
+      {
+        "attribute": "VIT",
+        "grade": "S",
+        "multiplier": 1.6,
+        "weight": 1
+      },
+      {
+        "attribute": "INT",
+        "grade": "D",
+        "multiplier": 0.8,
+        "weight": 1
+      },
+      {
+        "attribute": "INT",
+        "grade": "C",
+        "multiplier": 1,
+        "weight": 1
+      },
+      {
+        "attribute": "INT",
+        "grade": "B",
+        "multiplier": 1.2,
+        "weight": 1
+      },
+      {
+        "attribute": "INT",
+        "grade": "A",
+        "multiplier": 1.4,
+        "weight": 1
+      },
+      {
+        "attribute": "INT",
+        "grade": "S",
+        "multiplier": 1.6,
+        "weight": 1
+      },
+      {
+        "attribute": "AGI",
+        "grade": "D",
+        "multiplier": 0.8,
+        "weight": 1
+      },
+      {
+        "attribute": "AGI",
+        "grade": "C",
+        "multiplier": 1,
+        "weight": 1
+      },
+      {
+        "attribute": "AGI",
+        "grade": "B",
+        "multiplier": 1.2,
+        "weight": 1
+      },
+      {
+        "attribute": "AGI",
+        "grade": "A",
+        "multiplier": 1.4,
+        "weight": 1
+      },
+      {
+        "attribute": "AGI",
+        "grade": "S",
+        "multiplier": 1.6,
+        "weight": 1
+      }
+    ],
+    "combat": [
+      {
+        "id": "physicalAttack",
+        "name": "物理攻擊",
+        "attribute": "STR",
+        "base": 0,
+        "coefficient": 2,
+        "cap": 1000000000,
+        "decimals": 2
+      },
+      {
+        "id": "maxHP",
+        "name": "最大HP",
+        "attribute": "VIT",
+        "base": 100,
+        "coefficient": 10,
+        "cap": 1000000000,
+        "decimals": 2
+      },
+      {
+        "id": "hpRegen",
+        "name": "生命恢復",
+        "attribute": "VIT",
+        "base": 0,
+        "coefficient": 0.1,
+        "cap": 1000000000,
+        "decimals": 3
+      },
+      {
+        "id": "magicalAttack",
+        "name": "魔法攻擊",
+        "attribute": "INT",
+        "base": 0,
+        "coefficient": 2,
+        "cap": 1000000000,
+        "decimals": 2
+      },
+      {
+        "id": "attackSpeed",
+        "name": "攻擊速度",
+        "attribute": "AGI",
+        "base": 1,
+        "coefficient": 0.01,
+        "cap": 1000000000,
+        "decimals": 3
+      },
+      {
+        "id": "dodge",
+        "name": "迴避率",
+        "attribute": "AGI",
+        "base": 0,
+        "coefficient": 0.001,
+        "cap": 0.75,
+        "decimals": 4
+      },
+      {
+        "id": "maxMP",
+        "name": "最大MP",
+        "attribute": "",
+        "base": 50,
+        "coefficient": 0,
+        "cap": 1000000000,
+        "decimals": 2
+      },
+      {
+        "id": "mpRegen",
+        "name": "魔力恢復",
+        "attribute": "",
+        "base": 0,
+        "coefficient": 0,
+        "cap": 1000000000,
+        "decimals": 3
+      },
+      {
+        "id": "critical",
+        "name": "暴擊率",
+        "attribute": "",
+        "base": 0,
+        "coefficient": 0,
+        "cap": 1,
+        "decimals": 4
+      },
+      {
+        "id": "movementSpeed",
+        "name": "移動速度",
+        "attribute": "",
+        "base": 1,
+        "coefficient": 0,
+        "cap": 1000000000,
+        "decimals": 3
+      }
+    ]
+  },
+  "skills": {
+    "version": 3,
+    "status": "暫定測試：技能、五級成本及權重取自Excel；效果僅示意未實作",
+    "rarityProfiles": [
+      {
+        "rarityId": "RAR_C",
+        "skillSlots": 1,
+        "weight": 7000,
+        "budgetMin": 30,
+        "budgetMax": 45
+      },
+      {
+        "rarityId": "RAR_R",
+        "skillSlots": 2,
+        "weight": 2200,
+        "budgetMin": 60,
+        "budgetMax": 90
+      },
+      {
+        "rarityId": "RAR_E",
+        "skillSlots": 3,
+        "weight": 650,
+        "budgetMin": 90,
+        "budgetMax": 135
+      },
+      {
+        "rarityId": "RAR_L",
+        "skillSlots": 4,
+        "weight": 130,
+        "budgetMin": 120,
+        "budgetMax": 180
+      },
+      {
+        "rarityId": "RAR_M",
+        "skillSlots": 5,
+        "weight": 20,
+        "budgetMin": 150,
+        "budgetMax": 225
+      }
+    ],
+    "levelTables": [
+      {
+        "id": "LEVEL_K001",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K002",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K003",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K004",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K005",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K006",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K007",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K008",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K009",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K037",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K038",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K039",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K040",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K041",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K042",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K043",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K044",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K045",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K046",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K047",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K048",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K049",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K050",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K017",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K051",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K052",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      },
+      {
+        "id": "LEVEL_K020",
+        "status": "暫定測試",
+        "levels": [
+          {
+            "level": 1,
+            "cost": 30,
+            "birthWeight": 60
+          },
+          {
+            "level": 2,
+            "cost": 45,
+            "birthWeight": 25
+          },
+          {
+            "level": 3,
+            "cost": 60,
+            "birthWeight": 10
+          },
+          {
+            "level": 4,
+            "cost": 75,
+            "birthWeight": 4
+          },
+          {
+            "level": 5,
+            "cost": 90,
+            "birthWeight": 1
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "skillId": "K001",
+        "name": "變身",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K001",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": [],
+        "icon": "./assets/skills/K001.svg"
+      },
+      {
+        "skillId": "K002",
+        "name": "元素召喚",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K002",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": [],
+        "icon": "./assets/skills/K002.svg"
+      },
+      {
+        "skillId": "K003",
+        "name": "亡體召喚",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K003",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": [],
+        "icon": "./assets/skills/K003.svg"
+      },
+      {
+        "skillId": "K004",
+        "name": "契約召喚",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K004",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": [],
+        "icon": "./assets/skills/K004.svg"
+      },
+      {
+        "skillId": "K005",
+        "name": "環繞元素球",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K005",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": [],
+        "icon": "./assets/skills/K005.svg"
+      },
+      {
+        "skillId": "K006",
+        "name": "隱匿",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K006",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": [],
+        "icon": "./assets/skills/K006.svg"
+      },
+      {
+        "skillId": "K007",
+        "name": "分身",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K007",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": [],
+        "icon": "./assets/skills/K007.svg"
+      },
+      {
+        "skillId": "K008",
+        "name": "地形改造",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K008",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": [],
+        "icon": "./assets/skills/K008.svg"
+      },
+      {
+        "skillId": "K009",
+        "name": "飛行",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K009",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": [],
+        "icon": "./assets/skills/K009.svg"
+      },
+      {
+        "skillId": "K037",
+        "name": "強健",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K037",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K038",
+        "name": "魔力充盈",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K038",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K039",
+        "name": "自癒",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K039",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K040",
+        "name": "魔力湧泉",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K040",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K041",
+        "name": "輕盈",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K041",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K042",
+        "name": "堅韌",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K042",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K043",
+        "name": "元素抗性",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K043",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K044",
+        "name": "節能施法",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K044",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K045",
+        "name": "熟練施法",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K045",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K046",
+        "name": "召喚強化",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K046",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K047",
+        "name": "背水一戰",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K047",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K048",
+        "name": "擊殺回復",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K048",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K049",
+        "name": "靜止回魔",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "passive",
+        "weight": 1,
+        "levelTableId": "LEVEL_K049",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K050",
+        "name": "疾行",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K050",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K017",
+        "name": "護盾",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K017",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K051",
+        "name": "狂熱",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K051",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K052",
+        "name": "元素附魔",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K052",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      },
+      {
+        "skillId": "K020",
+        "name": "持續再生",
+        "registration": "excel-experimental",
+        "status": "暫定測試值；效果未實作",
+        "type": "active",
+        "weight": 1,
+        "levelTableId": "LEVEL_K020",
+        "allowDuplicates": false,
+        "lockedOnBirth": false,
+        "allowedSpeciesIds": []
+      }
+    ],
+    "speciesBindings": [],
+    "mutation": {
+      "probability": 0.1,
+      "skillBudgetMultiplier": 1.5,
+      "rounding": "floor",
+      "status": "暫定測試；只提高技能預算，不增加容量或保證花完"
+    },
+    "policies": {
+      "budgetSampling": "uniform-inclusive-integer",
+      "overBudget": "reserve-minimum-downgrade-no-retry",
+      "duplicate": "exclude-unless-allowed",
+      "bindingFailure": "reject-configuration",
+      "legacyTalents": "disabled",
+      "reservation": "eligible-distinct-level-one"
+    }
+  }
+}
