@@ -1,0 +1,8 @@
+{
+  "algorithm": "v6-pools-four-stages-v3/optional-count-first-acquired-free",
+  "seed": "v6-release-parity",
+  "count": 1000,
+  "sha256": "2ffd6e6a693ac43de5e14c85a09d7765f2e00423e6e7e815dfaf1877fcb5ba53",
+  "legacyFiles": 63,
+  "legacyManifestHash": "2fb47e3b8b2fc4092fece7f86b5c2cef0092512d74d07b35bbea0ab5f5f86f9d"
+}

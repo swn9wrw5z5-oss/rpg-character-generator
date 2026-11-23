@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "release": "27-skills-five-levels-v3-20261116",
+  "release": "v6-first-acquired-free-20261124",
   "previousMain": "d208ba4eff6e8dae6b36046ac8f0cfb3f0ee814b",
   "legacyBase": "1fa1240b57abcb80ea639bf35ca9bb43fb7486fc",
   "runtimeBase": "v5/releases/fivelevels-v3-20261116/",
@@ -316,7 +316,89 @@
       "path": "attributes/assets/species/placeholder-pixel.svg",
       "sha256": "9117cc5ae3165dfce899356edea0f6cd8afefd004f40c69b17bf55e9da7168cf",
       "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v6/assets/portraits/dragon.png",
+      "sha256": "cf9aefdfd8ec5c659073c68d629222c2e025fee3b0ed5527bb962c529de5f54a"
+    },
+    {
+      "path": "v6/assets/portraits/dwarf.png",
+      "sha256": "db12714d8db78f4eb80a39fa9ef1562790fc68a51c9c45e0cade7efcb849ba09"
+    },
+    {
+      "path": "v6/assets/portraits/elf.png",
+      "sha256": "d2eb5fd47d992df3c7c187e692cae37bda214e1259284bc6521c9a72dc77dffd"
+    },
+    {
+      "path": "v6/assets/portraits/human.png",
+      "sha256": "ae0a62f5de3807511e859c7cfefca1f7bb0383fa9e15992f5833041304a0e8bd"
+    },
+    {
+      "path": "v6/assets/portraits/mutation-a.png",
+      "sha256": "276838e19b0318fa3657e7059e113df1a33a239864e7663beb7364d6380783f2"
+    },
+    {
+      "path": "v6/assets/portraits/mutation-b.png",
+      "sha256": "ca547dd0c5ca6dee3917e0b5407c56a68b5de12406bc12b5911f36f534c0c18c"
+    },
+    {
+      "path": "v6/assets/portraits/orc.png",
+      "sha256": "0f64c779c1c5d937682080141127123937e22e107941c0b5c687908f2158229a"
+    },
+    {
+      "path": "v6/assets/portraits/undead.png",
+      "sha256": "134d3a2813e277afbd40c2e66e9fec2205e1ea89d3464033c4b46606aaa90712"
+    },
+    {
+      "path": "v6/assets/portraits/vampire.png",
+      "sha256": "7e564527123b893fd07b822793868d0d0ffc07cf4977459af1f65b7fc8cf0760"
+    },
+    {
+      "path": "v6/config/bundle.json",
+      "sha256": "52c74888e50110ab364663f544dfa664420a6bc0dc3a0c66d5ad541c6fdc9b40",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v6/index.html",
+      "sha256": "5f60b26f11cc0445072d78e856e853f02829c02f8e75c2eeb31e809e4a0543a9",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v6/src/base/attributes.mjs",
+      "sha256": "849e4ca7d8175b47940756bc076253fd0cd5780f870227125e3ccfc325e66d89",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v6/src/base/core.mjs",
+      "sha256": "1d274839f45d24663a90999570c806d9d728f2058ec4962f84a44bc0d6c5d15e",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v6/src/base/random.mjs",
+      "sha256": "f7a6d3640a2c4c099e156cbe52048e2bdf5394112bc9e53bfe433216cc4000e9",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v6/src/base/sampling.mjs",
+      "sha256": "c6c0fd931ef0f00932d52fca5a2084a2ac1f09702a3d67b1c022a3294400a4fe",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v6/src/core.mjs",
+      "sha256": "d1e417122f74520fcdd06158510ced0515662db686bbbaccef8017b3e456cfdc",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v6/web/app.mjs",
+      "sha256": "00ffee73fc3727d3b740ab9a40f755b5ef23f59b60e65255c0abb77f3809930e",
+      "lineEndings": "lf-normalized"
+    },
+    {
+      "path": "v6/web/style.css",
+      "sha256": "8d6fbb5fb3779ab8635f90eb0107255ea0622d3c4831384224d00659bd6ab381",
+      "lineEndings": "lf-normalized"
     }
   ],
-  "attributesBase": "attributes/"
+  "attributesBase": "attributes/",
+  "v6Base": "v6/"
 }

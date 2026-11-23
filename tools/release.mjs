@@ -8,6 +8,7 @@ import { schemas } from '../v5/releases/fivelevels-v3-20261116/src/schema.mjs';
 import { assertValidData } from '../v5/releases/fivelevels-v3-20261116/src/validate.mjs';
 import { validateTestParameters } from '../v5/releases/fivelevels-v3-20261116/src/core.mjs';
 import {assertSkillRules} from '../v5/releases/fivelevels-v3-20261116/src/skill-rules.mjs';
+import {validateBundle as validateV6} from '../v6/src/core.mjs';
 
 export const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const manifest=JSON.parse(await readFile(join(root,'release/manifest.json'),'utf8'));
@@ -22,7 +23,7 @@ function refuse(reason){throw new Error('RELEASE_REJECTED: '+reason);}
 function sha(bytes){return createHash('sha256').update(bytes).digest('hex');}
 function recordHash(bytes,record){return sha(record.lineEndings==='lf-normalized'?Buffer.from(bytes.toString('utf8').replace(/\r\n/g,'\n')):bytes);}
 function validManifest(){
-  if(manifest.version!==2||manifest.attributesBase!=='attributes/'||new Set(publicFiles).size!==publicFiles.length||manifest.runtimeBase!=='v5/releases/fivelevels-v3-20261116/')refuse('invalid public manifest');
+  if(manifest.version!==2||manifest.attributesBase!=='attributes/'||manifest.v6Base!=='v6/'||new Set(publicFiles).size!==publicFiles.length||manifest.runtimeBase!=='v5/releases/fivelevels-v3-20261116/')refuse('invalid public manifest');
   for(const file of publicFiles)if(file.startsWith('/')||file.includes('\\')||file.split('/').includes('..'))refuse('unsafe manifest path');
 }
 export async function verifySite(directory,{exact=true}={}){
@@ -59,10 +60,11 @@ export async function verifySite(directory,{exact=true}={}){
     const path=join(directory,record.path),info=await lstat(path);
     if(!info.isFile()||info.isSymbolicLink()||info.nlink!==1)refuse('invalid file: '+record.path);
     const bytes=await readFile(path),text=bytes.toString('utf8');
-    if(unsafe.some(pattern=>pattern.test(text)))refuse('credential pattern or local path: '+record.path);
+    if(record.path.endsWith('.png')){if(bytes.subarray(0,8).toString('hex')!=='89504e470d0a1a0a')refuse('invalid PNG: '+record.path);}
+    else if(unsafe.some(pattern=>pattern.test(text)))refuse('credential pattern or local path: '+record.path);
     if(recordHash(bytes,record)!==record.sha256)refuse('unreviewed content: '+record.path);
     if(record.path.endsWith('.html')||record.path.endsWith('/web/app.mjs'))for(const match of text.matchAll(/\b(?:src|href)\s*=\s*["']([^"']+)["']/g))resource(match[1],record.path,record.path.endsWith('.mjs'));
-    if((record.path.startsWith(manifest.runtimeBase)||record.path.startsWith(manifest.attributesBase))&&/localhost|127\.0\.0\.1|\/api\/|node:|require\(|\.xlsx/i.test(text))refuse('local/server dependency in public runtime: '+record.path);
+    if(!record.path.endsWith('.png')&&(record.path.startsWith(manifest.runtimeBase)||record.path.startsWith(manifest.attributesBase)||record.path.startsWith(manifest.v6Base))&&/localhost|127\.0\.0\.1|\/api\/|node:|require\(|\.xlsx/i.test(text))refuse('local/server dependency in public runtime: '+record.path);
     if(record.path.endsWith('.mjs')){
       for(const match of text.matchAll(/\bfrom\s*["']([^"']+)["']/g))resource(match[1],record.path);
       for(const match of text.matchAll(/new\s+URL\(\s*["']([^"']+)["']\s*,\s*import\.meta\.url\s*\)/g))resource(match[1],record.path);
@@ -83,6 +85,10 @@ export async function verifySite(directory,{exact=true}={}){
   validateTestParameters(data,parameters);
   const rules=JSON.parse(await readFile(join(directory,manifest.runtimeBase+'config/fivelevels-rules.json'),'utf8'));assertSkillRules(data,rules);
   if(rules.version!==3||rules.skills.length!==27||rules.levelTables.some(t=>t.levels.length!==5))refuse('not the reviewed five-level model');
+  const v6=JSON.parse(await readFile(join(directory,manifest.v6Base+'config/bundle.json'),'utf8'));
+  if(!isDeepStrictEqual(Object.keys(v6).sort(),['format','portraits','settings','tables']))refuse('unexpected V6 metadata');
+  const v6Errors=validateV6(v6);if(v6Errors.length)refuse('invalid V6 settings: '+JSON.stringify(v6Errors));
+  for(const portrait of [...Object.values(v6.portraits.species),...Object.keys(v6.portraits.mutationWeights)])if(!publicFiles.includes(manifest.v6Base+'assets/portraits/'+portrait+'.png'))refuse('missing V6 portrait');
   return {ok:true,files:output,warningCount:validation.warnings.length,sourceSha256:data.source.sha256};
 }
 export async function buildSite({output=join(root,'dist')}={}){

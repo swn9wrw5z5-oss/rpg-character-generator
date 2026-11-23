@@ -1,0 +1,2287 @@
+{
+  "format": "rpg-v6-bundle-v1",
+  "settings": {
+    "format": "rpg-v6-settings-v1",
+    "attributes": {
+      "status": "暫定測試值",
+      "base": [
+        {
+          "id": "STR",
+          "name": "力量",
+          "birth": 5
+        },
+        {
+          "id": "VIT",
+          "name": "體質",
+          "birth": 5
+        },
+        {
+          "id": "INT",
+          "name": "智力",
+          "birth": 5
+        },
+        {
+          "id": "AGI",
+          "name": "敏捷",
+          "birth": 5
+        }
+      ],
+      "points": {
+        "starting": 10,
+        "perLevel": 5,
+        "levelCap": 100
+      },
+      "grades": [
+        {
+          "attribute": "STR",
+          "grade": "D",
+          "multiplier": 0.8,
+          "weight": 1
+        },
+        {
+          "attribute": "STR",
+          "grade": "C",
+          "multiplier": 1,
+          "weight": 1
+        },
+        {
+          "attribute": "STR",
+          "grade": "B",
+          "multiplier": 1.2,
+          "weight": 1
+        },
+        {
+          "attribute": "STR",
+          "grade": "A",
+          "multiplier": 1.4,
+          "weight": 1
+        },
+        {
+          "attribute": "STR",
+          "grade": "S",
+          "multiplier": 1.6,
+          "weight": 1
+        },
+        {
+          "attribute": "VIT",
+          "grade": "D",
+          "multiplier": 0.8,
+          "weight": 1
+        },
+        {
+          "attribute": "VIT",
+          "grade": "C",
+          "multiplier": 1,
+          "weight": 1
+        },
+        {
+          "attribute": "VIT",
+          "grade": "B",
+          "multiplier": 1.2,
+          "weight": 1
+        },
+        {
+          "attribute": "VIT",
+          "grade": "A",
+          "multiplier": 1.4,
+          "weight": 1
+        },
+        {
+          "attribute": "VIT",
+          "grade": "S",
+          "multiplier": 1.6,
+          "weight": 1
+        },
+        {
+          "attribute": "INT",
+          "grade": "D",
+          "multiplier": 0.8,
+          "weight": 1
+        },
+        {
+          "attribute": "INT",
+          "grade": "C",
+          "multiplier": 1,
+          "weight": 1
+        },
+        {
+          "attribute": "INT",
+          "grade": "B",
+          "multiplier": 1.2,
+          "weight": 1
+        },
+        {
+          "attribute": "INT",
+          "grade": "A",
+          "multiplier": 1.4,
+          "weight": 1
+        },
+        {
+          "attribute": "INT",
+          "grade": "S",
+          "multiplier": 1.6,
+          "weight": 1
+        },
+        {
+          "attribute": "AGI",
+          "grade": "D",
+          "multiplier": 0.8,
+          "weight": 1
+        },
+        {
+          "attribute": "AGI",
+          "grade": "C",
+          "multiplier": 1,
+          "weight": 1
+        },
+        {
+          "attribute": "AGI",
+          "grade": "B",
+          "multiplier": 1.2,
+          "weight": 1
+        },
+        {
+          "attribute": "AGI",
+          "grade": "A",
+          "multiplier": 1.4,
+          "weight": 1
+        },
+        {
+          "attribute": "AGI",
+          "grade": "S",
+          "multiplier": 1.6,
+          "weight": 1
+        }
+      ],
+      "combat": [
+        {
+          "id": "physicalAttack",
+          "name": "物理攻擊",
+          "attribute": "STR",
+          "base": 0,
+          "coefficient": 2,
+          "cap": 1000000000,
+          "decimals": 2
+        },
+        {
+          "id": "maxHP",
+          "name": "最大HP",
+          "attribute": "VIT",
+          "base": 100,
+          "coefficient": 10,
+          "cap": 1000000000,
+          "decimals": 2
+        },
+        {
+          "id": "hpRegen",
+          "name": "生命恢復",
+          "attribute": "VIT",
+          "base": 0,
+          "coefficient": 0.1,
+          "cap": 1000000000,
+          "decimals": 3
+        },
+        {
+          "id": "magicalAttack",
+          "name": "魔法攻擊",
+          "attribute": "INT",
+          "base": 0,
+          "coefficient": 2,
+          "cap": 1000000000,
+          "decimals": 2
+        },
+        {
+          "id": "attackSpeed",
+          "name": "攻擊速度",
+          "attribute": "AGI",
+          "base": 1,
+          "coefficient": 0.01,
+          "cap": 1000000000,
+          "decimals": 3
+        },
+        {
+          "id": "dodge",
+          "name": "迴避率",
+          "attribute": "AGI",
+          "base": 0,
+          "coefficient": 0.001,
+          "cap": 0.75,
+          "decimals": 4
+        },
+        {
+          "id": "maxMP",
+          "name": "最大MP",
+          "attribute": "",
+          "base": 50,
+          "coefficient": 0,
+          "cap": 1000000000,
+          "decimals": 2
+        },
+        {
+          "id": "mpRegen",
+          "name": "魔力恢復",
+          "attribute": "",
+          "base": 0,
+          "coefficient": 0,
+          "cap": 1000000000,
+          "decimals": 3
+        },
+        {
+          "id": "critical",
+          "name": "暴擊率",
+          "attribute": "",
+          "base": 0,
+          "coefficient": 0,
+          "cap": 1,
+          "decimals": 4
+        },
+        {
+          "id": "movementSpeed",
+          "name": "移動速度",
+          "attribute": "",
+          "base": 1,
+          "coefficient": 0,
+          "cap": 1000000000,
+          "decimals": 3
+        }
+      ]
+    },
+    "skills": {
+      "rarityProfiles": [
+        {
+          "rarityId": "RAR_C",
+          "skillSlots": 1,
+          "weight": 7000,
+          "budgetMin": 30,
+          "budgetMax": 45
+        },
+        {
+          "rarityId": "RAR_R",
+          "skillSlots": 2,
+          "weight": 2200,
+          "budgetMin": 60,
+          "budgetMax": 90
+        },
+        {
+          "rarityId": "RAR_E",
+          "skillSlots": 3,
+          "weight": 650,
+          "budgetMin": 90,
+          "budgetMax": 135
+        },
+        {
+          "rarityId": "RAR_L",
+          "skillSlots": 4,
+          "weight": 130,
+          "budgetMin": 120,
+          "budgetMax": 180
+        },
+        {
+          "rarityId": "RAR_M",
+          "skillSlots": 5,
+          "weight": 20,
+          "budgetMin": 150,
+          "budgetMax": 225
+        }
+      ],
+      "mutation": {
+        "probability": 0.1,
+        "skillBudgetMultiplier": 1.5,
+        "rounding": "floor"
+      },
+      "policies": {
+        "budgetSampling": "uniform-inclusive-integer",
+        "overBudget": "reject-attempt-no-retry-no-downgrade",
+        "duplicate": "exclude-unless-allowed",
+        "bindingFailure": "reject-configuration",
+        "legacyTalents": "disabled",
+        "reservation": "none",
+        "firstAcquiredSkillCost": "free"
+      },
+      "version": 6,
+      "status": "V6 I～IV 階測試；容量是上限，第一個取得技能免費，無補抽與降階；技能效果未實作",
+      "birthCountDistribution": {
+        "format": "v6-birth-attempt-distribution-v1",
+        "status": "暫定測試值；是否允許主動抽取0次及正式機率待使用者確認",
+        "meaning": "先抽出生嘗試次數，再執行相同次數的單次抽取；第一個取得技能免費，其餘可能因預算不足或候選用盡而失敗。零次權重暫為0，不代表已正式決定禁止0技能。",
+        "profiles": [
+          {
+            "rarityId": "RAR_C",
+            "counts": [
+              {
+                "attempts": 0,
+                "weight": 0
+              },
+              {
+                "attempts": 1,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "rarityId": "RAR_R",
+            "counts": [
+              {
+                "attempts": 0,
+                "weight": 0
+              },
+              {
+                "attempts": 1,
+                "weight": 1
+              },
+              {
+                "attempts": 2,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "rarityId": "RAR_E",
+            "counts": [
+              {
+                "attempts": 0,
+                "weight": 0
+              },
+              {
+                "attempts": 1,
+                "weight": 1
+              },
+              {
+                "attempts": 2,
+                "weight": 1
+              },
+              {
+                "attempts": 3,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "rarityId": "RAR_L",
+            "counts": [
+              {
+                "attempts": 0,
+                "weight": 0
+              },
+              {
+                "attempts": 1,
+                "weight": 1
+              },
+              {
+                "attempts": 2,
+                "weight": 1
+              },
+              {
+                "attempts": 3,
+                "weight": 1
+              },
+              {
+                "attempts": 4,
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "rarityId": "RAR_M",
+            "counts": [
+              {
+                "attempts": 0,
+                "weight": 0
+              },
+              {
+                "attempts": 1,
+                "weight": 1
+              },
+              {
+                "attempts": 2,
+                "weight": 1
+              },
+              {
+                "attempts": 3,
+                "weight": 1
+              },
+              {
+                "attempts": 4,
+                "weight": 1
+              },
+              {
+                "attempts": 5,
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      },
+      "poolWeights": [
+        {
+          "id": "shared",
+          "weight": 70
+        },
+        {
+          "id": "racial-normal",
+          "weight": 20
+        },
+        {
+          "id": "racial-rare",
+          "weight": 10
+        }
+      ],
+      "emptyPoolPolicy": "exclude-empty-pools-before-draw"
+    },
+    "rarities": [
+      {
+        "id": "RAR_C",
+        "name": "普通"
+      },
+      {
+        "id": "RAR_R",
+        "name": "稀有"
+      },
+      {
+        "id": "RAR_E",
+        "name": "史詩"
+      },
+      {
+        "id": "RAR_L",
+        "name": "傳說"
+      },
+      {
+        "id": "RAR_M",
+        "name": "神話"
+      }
+    ]
+  },
+  "tables": {
+    "species": {
+      "format": "rpg-v6-species-v1",
+      "rows": [
+        {
+          "id": "SPEC_HUMAN",
+          "name": "人類",
+          "familyId": null,
+          "weight": 1,
+          "enabled": true,
+          "minWidth": 6,
+          "maxWidth": 10,
+          "minHeight": 5,
+          "maxHeight": 7
+        },
+        {
+          "id": "SPEC_ORC",
+          "name": "獸人",
+          "familyId": null,
+          "weight": 1,
+          "enabled": true,
+          "minWidth": 8,
+          "maxWidth": 10,
+          "minHeight": 6,
+          "maxHeight": 8
+        },
+        {
+          "id": "SPEC_ELF",
+          "name": "精靈",
+          "familyId": null,
+          "weight": 1,
+          "enabled": true,
+          "minWidth": 6,
+          "maxWidth": 9,
+          "minHeight": 6,
+          "maxHeight": 7
+        },
+        {
+          "id": "SPEC_DWARF",
+          "name": "矮人",
+          "familyId": null,
+          "weight": 1,
+          "enabled": true,
+          "minWidth": 7,
+          "maxWidth": 9,
+          "minHeight": 5,
+          "maxHeight": 8
+        },
+        {
+          "id": "SPEC_VAMPIRE",
+          "name": "吸血鬼族",
+          "familyId": null,
+          "weight": 1,
+          "enabled": true,
+          "minWidth": 7,
+          "maxWidth": 9,
+          "minHeight": 5,
+          "maxHeight": 7
+        },
+        {
+          "id": "SPEC_DRAGON",
+          "name": "龍族",
+          "familyId": null,
+          "weight": 1,
+          "enabled": true,
+          "minWidth": 7,
+          "maxWidth": 10,
+          "minHeight": 6,
+          "maxHeight": 8
+        },
+        {
+          "id": "SPEC_UNDEAD",
+          "name": "不死族",
+          "familyId": null,
+          "weight": 1,
+          "enabled": true,
+          "minWidth": 7,
+          "maxWidth": 9,
+          "minHeight": 5,
+          "maxHeight": 8
+        }
+      ]
+    },
+    "skills": {
+      "format": "rpg-v6-skills-v1",
+      "rows": [
+        {
+          "id": "SK001",
+          "name": "適者生存",
+          "type": "racial",
+          "levelTableId": "LV_SK001",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_HUMAN"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK002",
+          "name": "魔法師之傳承",
+          "type": "racial",
+          "levelTableId": "LV_SK002",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_HUMAN"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK100",
+          "name": "野獸之力",
+          "type": "racial",
+          "levelTableId": "LV_SK100",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_ORC"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK101",
+          "name": "狂戰士之魂",
+          "type": "racial",
+          "levelTableId": "LV_SK101",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_ORC"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK200",
+          "name": "自然之力",
+          "type": "racial",
+          "levelTableId": "LV_SK200",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_ELF"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK201",
+          "name": "鬼魅之影",
+          "type": "racial",
+          "levelTableId": "LV_SK201",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_ELF"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK300",
+          "name": "堅強體魄",
+          "type": "racial",
+          "levelTableId": "LV_SK300",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_DWARF"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK301",
+          "name": "頑強抵抗",
+          "type": "racial",
+          "levelTableId": "LV_SK301",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_DWARF"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK400",
+          "name": "德古拉之魂",
+          "type": "racial",
+          "levelTableId": "LV_SK400",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_VAMPIRE"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK401",
+          "name": "血祭之力",
+          "type": "racial",
+          "levelTableId": "LV_SK401",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_VAMPIRE"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK500",
+          "name": "遠古之力",
+          "type": "racial",
+          "levelTableId": "LV_SK500",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_DRAGON"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK501",
+          "name": "元素親和",
+          "type": "racial",
+          "levelTableId": "LV_SK501",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_DRAGON"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK600",
+          "name": "亡者甦醒",
+          "type": "racial",
+          "levelTableId": "LV_SK600",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_UNDEAD"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK601",
+          "name": "地獄之手",
+          "type": "racial",
+          "levelTableId": "LV_SK601",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [
+            "SPEC_UNDEAD"
+          ],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK700",
+          "name": "煉金術",
+          "type": "exploration",
+          "levelTableId": "LV_SK700",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK701",
+          "name": "匠人精神",
+          "type": "exploration",
+          "levelTableId": "LV_SK701",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK702",
+          "name": "寶藏獵人",
+          "type": "exploration",
+          "levelTableId": "LV_SK702",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK703",
+          "name": "考古學者",
+          "type": "exploration",
+          "levelTableId": "LV_SK703",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK704",
+          "name": "叢林守護者",
+          "type": "exploration",
+          "levelTableId": "LV_SK704",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK800",
+          "name": "賭徒",
+          "type": "special",
+          "levelTableId": "LV_SK800",
+          "icon": null,
+          "suggestion": "建議：隨機獲得一種技能（原筆記暫定）",
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK900",
+          "name": "融火之神",
+          "type": "common",
+          "levelTableId": "LV_SK900",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK901",
+          "name": "無形之水",
+          "type": "common",
+          "levelTableId": "LV_SK901",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK902",
+          "name": "冰霜之力",
+          "type": "common",
+          "levelTableId": "LV_SK902",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK903",
+          "name": "颶風之力",
+          "type": "common",
+          "levelTableId": "LV_SK903",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK904",
+          "name": "大地祝福",
+          "type": "common",
+          "levelTableId": "LV_SK904",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK905",
+          "name": "雷霆萬鈞",
+          "type": "common",
+          "levelTableId": "LV_SK905",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK906",
+          "name": "險象環生",
+          "type": "common",
+          "levelTableId": "LV_SK906",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK907",
+          "name": "暗影之襲",
+          "type": "common",
+          "levelTableId": "LV_SK907",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK908",
+          "name": "無界領域",
+          "type": "common",
+          "levelTableId": "LV_SK908",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": true
+        },
+        {
+          "id": "SK909",
+          "name": "",
+          "type": "common",
+          "levelTableId": "LV_SK909",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": false
+        },
+        {
+          "id": "SK910",
+          "name": "",
+          "type": "common",
+          "levelTableId": "LV_SK910",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": false
+        },
+        {
+          "id": "SK911",
+          "name": "",
+          "type": "common",
+          "levelTableId": "LV_SK911",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": false
+        },
+        {
+          "id": "SK912",
+          "name": "",
+          "type": "common",
+          "levelTableId": "LV_SK912",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": false
+        },
+        {
+          "id": "SK913",
+          "name": "",
+          "type": "common",
+          "levelTableId": "LV_SK913",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": false
+        },
+        {
+          "id": "SK914",
+          "name": "",
+          "type": "common",
+          "levelTableId": "LV_SK914",
+          "icon": null,
+          "suggestion": null,
+          "weight": 1,
+          "allowedSpeciesIds": [],
+          "allowDuplicates": false,
+          "lockedOnBirth": false,
+          "enabled": false
+        }
+      ]
+    },
+    "skill-levels": {
+      "format": "rpg-v6-skill-levels-v1",
+      "rows": [
+        {
+          "id": "LV_SK001",
+          "skillId": "SK001",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK001",
+          "skillId": "SK001",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK001",
+          "skillId": "SK001",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK001",
+          "skillId": "SK001",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "受到致命一擊時可以無敵2秒 較長cd時間"
+        },
+        {
+          "id": "LV_SK002",
+          "skillId": "SK002",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK002",
+          "skillId": "SK002",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK002",
+          "skillId": "SK002",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK002",
+          "skillId": "SK002",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "法術攻擊提升"
+        },
+        {
+          "id": "LV_SK100",
+          "skillId": "SK100",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK100",
+          "skillId": "SK100",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK100",
+          "skillId": "SK100",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK100",
+          "skillId": "SK100",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "技能發動時間增加攻速血量"
+        },
+        {
+          "id": "LV_SK101",
+          "skillId": "SK101",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK101",
+          "skillId": "SK101",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK101",
+          "skillId": "SK101",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK101",
+          "skillId": "SK101",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "技能發動時體質影響攻擊力"
+        },
+        {
+          "id": "LV_SK200",
+          "skillId": "SK200",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK200",
+          "skillId": "SK200",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK200",
+          "skillId": "SK200",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK200",
+          "skillId": "SK200",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "短時間內爆擊傷害提升"
+        },
+        {
+          "id": "LV_SK201",
+          "skillId": "SK201",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK201",
+          "skillId": "SK201",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK201",
+          "skillId": "SK201",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK201",
+          "skillId": "SK201",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "閃避時附加額外傷害"
+        },
+        {
+          "id": "LV_SK300",
+          "skillId": "SK300",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK300",
+          "skillId": "SK300",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK300",
+          "skillId": "SK300",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK300",
+          "skillId": "SK300",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "減少大量傷害"
+        },
+        {
+          "id": "LV_SK301",
+          "skillId": "SK301",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK301",
+          "skillId": "SK301",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK301",
+          "skillId": "SK301",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK301",
+          "skillId": "SK301",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "能反擊魔法攻擊"
+        },
+        {
+          "id": "LV_SK400",
+          "skillId": "SK400",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK400",
+          "skillId": "SK400",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK400",
+          "skillId": "SK400",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK400",
+          "skillId": "SK400",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "死亡時可以重生一次"
+        },
+        {
+          "id": "LV_SK401",
+          "skillId": "SK401",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK401",
+          "skillId": "SK401",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK401",
+          "skillId": "SK401",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK401",
+          "skillId": "SK401",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "毒性傷害增加爆擊"
+        },
+        {
+          "id": "LV_SK500",
+          "skillId": "SK500",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK500",
+          "skillId": "SK500",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK500",
+          "skillId": "SK500",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK500",
+          "skillId": "SK500",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "溢出的血量可轉化為攻擊傷害"
+        },
+        {
+          "id": "LV_SK501",
+          "skillId": "SK501",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK501",
+          "skillId": "SK501",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK501",
+          "skillId": "SK501",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK501",
+          "skillId": "SK501",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "所有元素抗性附加於攻擊加成"
+        },
+        {
+          "id": "LV_SK600",
+          "skillId": "SK600",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK600",
+          "skillId": "SK600",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK600",
+          "skillId": "SK600",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK600",
+          "skillId": "SK600",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "召喚強力生物"
+        },
+        {
+          "id": "LV_SK601",
+          "skillId": "SK601",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "緩速"
+        },
+        {
+          "id": "LV_SK601",
+          "skillId": "SK601",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK601",
+          "skillId": "SK601",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK601",
+          "skillId": "SK601",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "短暫暈眩敵人"
+        },
+        {
+          "id": "LV_SK700",
+          "skillId": "SK700",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "能在地圖中將物質提煉為更稀有的物質,技能等級越高能提煉越稀有的物質或地圖道具"
+        },
+        {
+          "id": "LV_SK700",
+          "skillId": "SK700",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "能在地圖中將物質提煉為更稀有的物質,技能等級越高能提煉越稀有的物質或地圖道具"
+        },
+        {
+          "id": "LV_SK700",
+          "skillId": "SK700",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "能在地圖中將物質提煉為更稀有的物質,技能等級越高能提煉越稀有的物質或地圖道具"
+        },
+        {
+          "id": "LV_SK700",
+          "skillId": "SK700",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "能在地圖中將物質提煉為更稀有的物質,技能等級越高能提煉越稀有的物質或地圖道具"
+        },
+        {
+          "id": "LV_SK701",
+          "skillId": "SK701",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "能在地圖中將裝備拆解,技能等級越高能拆解更高階的道具"
+        },
+        {
+          "id": "LV_SK701",
+          "skillId": "SK701",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "能在地圖中將裝備拆解,技能等級越高能拆解更高階的道具"
+        },
+        {
+          "id": "LV_SK701",
+          "skillId": "SK701",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "能在地圖中將裝備拆解,技能等級越高能拆解更高階的道具"
+        },
+        {
+          "id": "LV_SK701",
+          "skillId": "SK701",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "能在地圖中將裝備拆解,技能等級越高能拆解更高階的道具"
+        },
+        {
+          "id": "LV_SK702",
+          "skillId": "SK702",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "能在地圖中解鎖封鎖的寶箱,技能等級越高能開更高階的寶箱"
+        },
+        {
+          "id": "LV_SK702",
+          "skillId": "SK702",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "能在地圖中解鎖封鎖的寶箱,技能等級越高能開更高階的寶箱"
+        },
+        {
+          "id": "LV_SK702",
+          "skillId": "SK702",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "能在地圖中解鎖封鎖的寶箱,技能等級越高能開更高階的寶箱"
+        },
+        {
+          "id": "LV_SK702",
+          "skillId": "SK702",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "能在地圖中解鎖封鎖的寶箱,技能等級越高能開更高階的寶箱"
+        },
+        {
+          "id": "LV_SK703",
+          "skillId": "SK703",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "能在特定地圖中發現隱藏入口,技能等級越高影響鑑定道具或裝備的結果"
+        },
+        {
+          "id": "LV_SK703",
+          "skillId": "SK703",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "能在特定地圖中發現隱藏入口,技能等級越高影響鑑定道具或裝備的結果"
+        },
+        {
+          "id": "LV_SK703",
+          "skillId": "SK703",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "能在特定地圖中發現隱藏入口,技能等級越高影響鑑定道具或裝備的結果"
+        },
+        {
+          "id": "LV_SK703",
+          "skillId": "SK703",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "能在特定地圖中發現隱藏入口,技能等級越高影響鑑定道具或裝備的結果"
+        },
+        {
+          "id": "LV_SK704",
+          "skillId": "SK704",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "能在特定地圖中發現隱藏入口,技能等級越高影響採集道具數量"
+        },
+        {
+          "id": "LV_SK704",
+          "skillId": "SK704",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "能在特定地圖中發現隱藏入口,技能等級越高影響採集道具數量"
+        },
+        {
+          "id": "LV_SK704",
+          "skillId": "SK704",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "能在特定地圖中發現隱藏入口,技能等級越高影響採集道具數量"
+        },
+        {
+          "id": "LV_SK704",
+          "skillId": "SK704",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "能在特定地圖中發現隱藏入口,技能等級越高影響採集道具數量"
+        },
+        {
+          "id": "LV_SK800",
+          "skillId": "SK800",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK800",
+          "skillId": "SK800",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK800",
+          "skillId": "SK800",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK800",
+          "skillId": "SK800",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": ""
+        },
+        {
+          "id": "LV_SK900",
+          "skillId": "SK900",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "火抗.火屬攻擊.高傷害"
+        },
+        {
+          "id": "LV_SK900",
+          "skillId": "SK900",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "火抗.火屬攻擊.高傷害"
+        },
+        {
+          "id": "LV_SK900",
+          "skillId": "SK900",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "火抗.火屬攻擊.高傷害"
+        },
+        {
+          "id": "LV_SK900",
+          "skillId": "SK900",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "火抗.火屬攻擊.高傷害"
+        },
+        {
+          "id": "LV_SK901",
+          "skillId": "SK901",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "水抗.強力治療."
+        },
+        {
+          "id": "LV_SK901",
+          "skillId": "SK901",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "水抗.強力治療."
+        },
+        {
+          "id": "LV_SK901",
+          "skillId": "SK901",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "水抗.強力治療."
+        },
+        {
+          "id": "LV_SK901",
+          "skillId": "SK901",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "水抗.強力治療."
+        },
+        {
+          "id": "LV_SK902",
+          "skillId": "SK902",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "抵抗控制.控制.範圍技"
+        },
+        {
+          "id": "LV_SK902",
+          "skillId": "SK902",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "抵抗控制.控制.範圍技"
+        },
+        {
+          "id": "LV_SK902",
+          "skillId": "SK902",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "抵抗控制.控制.範圍技"
+        },
+        {
+          "id": "LV_SK902",
+          "skillId": "SK902",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "抵抗控制.控制.範圍技"
+        },
+        {
+          "id": "LV_SK903",
+          "skillId": "SK903",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "風抗.攻速.單體高傷害"
+        },
+        {
+          "id": "LV_SK903",
+          "skillId": "SK903",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "風抗.攻速.單體高傷害"
+        },
+        {
+          "id": "LV_SK903",
+          "skillId": "SK903",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "風抗.攻速.單體高傷害"
+        },
+        {
+          "id": "LV_SK903",
+          "skillId": "SK903",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "風抗.攻速.單體高傷害"
+        },
+        {
+          "id": "LV_SK904",
+          "skillId": "SK904",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "土抗.減傷.BUFF"
+        },
+        {
+          "id": "LV_SK904",
+          "skillId": "SK904",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "土抗.減傷.BUFF"
+        },
+        {
+          "id": "LV_SK904",
+          "skillId": "SK904",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "土抗.減傷.BUFF"
+        },
+        {
+          "id": "LV_SK904",
+          "skillId": "SK904",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "土抗.減傷.BUFF"
+        },
+        {
+          "id": "LV_SK905",
+          "skillId": "SK905",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "爆擊.暈眩.範圍技"
+        },
+        {
+          "id": "LV_SK905",
+          "skillId": "SK905",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "爆擊.暈眩.範圍技"
+        },
+        {
+          "id": "LV_SK905",
+          "skillId": "SK905",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "爆擊.暈眩.範圍技"
+        },
+        {
+          "id": "LV_SK905",
+          "skillId": "SK905",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "爆擊.暈眩.範圍技"
+        },
+        {
+          "id": "LV_SK906",
+          "skillId": "SK906",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "血量越低攻擊越高"
+        },
+        {
+          "id": "LV_SK906",
+          "skillId": "SK906",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "血量越低攻擊越高"
+        },
+        {
+          "id": "LV_SK906",
+          "skillId": "SK906",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "血量越低攻擊越高"
+        },
+        {
+          "id": "LV_SK906",
+          "skillId": "SK906",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "血量越低攻擊越高"
+        },
+        {
+          "id": "LV_SK907",
+          "skillId": "SK907",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": "迴避.單體高傷害"
+        },
+        {
+          "id": "LV_SK907",
+          "skillId": "SK907",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": "迴避.單體高傷害"
+        },
+        {
+          "id": "LV_SK907",
+          "skillId": "SK907",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": "迴避.單體高傷害"
+        },
+        {
+          "id": "LV_SK907",
+          "skillId": "SK907",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": "迴避.單體高傷害"
+        },
+        {
+          "id": "LV_SK908",
+          "skillId": "SK908",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK908",
+          "skillId": "SK908",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK908",
+          "skillId": "SK908",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK908",
+          "skillId": "SK908",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": ""
+        },
+        {
+          "id": "LV_SK909",
+          "skillId": "SK909",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK909",
+          "skillId": "SK909",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK909",
+          "skillId": "SK909",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK909",
+          "skillId": "SK909",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": ""
+        },
+        {
+          "id": "LV_SK910",
+          "skillId": "SK910",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK910",
+          "skillId": "SK910",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK910",
+          "skillId": "SK910",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK910",
+          "skillId": "SK910",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": ""
+        },
+        {
+          "id": "LV_SK911",
+          "skillId": "SK911",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK911",
+          "skillId": "SK911",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK911",
+          "skillId": "SK911",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK911",
+          "skillId": "SK911",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": ""
+        },
+        {
+          "id": "LV_SK912",
+          "skillId": "SK912",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK912",
+          "skillId": "SK912",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK912",
+          "skillId": "SK912",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK912",
+          "skillId": "SK912",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": ""
+        },
+        {
+          "id": "LV_SK913",
+          "skillId": "SK913",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK913",
+          "skillId": "SK913",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK913",
+          "skillId": "SK913",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK913",
+          "skillId": "SK913",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": ""
+        },
+        {
+          "id": "LV_SK914",
+          "skillId": "SK914",
+          "level": 1,
+          "cost": 3,
+          "birthWeight": 75,
+          "description": ""
+        },
+        {
+          "id": "LV_SK914",
+          "skillId": "SK914",
+          "level": 2,
+          "cost": 5,
+          "birthWeight": 20,
+          "description": ""
+        },
+        {
+          "id": "LV_SK914",
+          "skillId": "SK914",
+          "level": 3,
+          "cost": 12,
+          "birthWeight": 4,
+          "description": ""
+        },
+        {
+          "id": "LV_SK914",
+          "skillId": "SK914",
+          "level": 4,
+          "cost": 25,
+          "birthWeight": 1,
+          "description": ""
+        }
+      ]
+    },
+    "species-bindings": {
+      "format": "rpg-v6-species-bindings-v1",
+      "rows": [
+        {
+          "id": "BIND_SK001",
+          "speciesId": "SPEC_HUMAN",
+          "skillId": "SK001",
+          "poolId": "racial-normal",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK002",
+          "speciesId": "SPEC_HUMAN",
+          "skillId": "SK002",
+          "poolId": "racial-rare",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK100",
+          "speciesId": "SPEC_ORC",
+          "skillId": "SK100",
+          "poolId": "racial-normal",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK101",
+          "speciesId": "SPEC_ORC",
+          "skillId": "SK101",
+          "poolId": "racial-rare",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK200",
+          "speciesId": "SPEC_ELF",
+          "skillId": "SK200",
+          "poolId": "racial-normal",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK201",
+          "speciesId": "SPEC_ELF",
+          "skillId": "SK201",
+          "poolId": "racial-rare",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK300",
+          "speciesId": "SPEC_DWARF",
+          "skillId": "SK300",
+          "poolId": "racial-normal",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK301",
+          "speciesId": "SPEC_DWARF",
+          "skillId": "SK301",
+          "poolId": "racial-rare",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK400",
+          "speciesId": "SPEC_VAMPIRE",
+          "skillId": "SK400",
+          "poolId": "racial-normal",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK401",
+          "speciesId": "SPEC_VAMPIRE",
+          "skillId": "SK401",
+          "poolId": "racial-rare",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK500",
+          "speciesId": "SPEC_DRAGON",
+          "skillId": "SK500",
+          "poolId": "racial-normal",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK501",
+          "speciesId": "SPEC_DRAGON",
+          "skillId": "SK501",
+          "poolId": "racial-rare",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK600",
+          "speciesId": "SPEC_UNDEAD",
+          "skillId": "SK600",
+          "poolId": "racial-normal",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        },
+        {
+          "id": "BIND_SK601",
+          "speciesId": "SPEC_UNDEAD",
+          "skillId": "SK601",
+          "poolId": "racial-rare",
+          "eligibleWhenMutated": true,
+          "mode": "eligibility"
+        }
+      ]
+    },
+    "skill-links": {
+      "format": "rpg-v6-skill-links-v1",
+      "rows": []
+    }
+  },
+  "portraits": {
+    "species": {
+      "SPEC_HUMAN": "human",
+      "SPEC_ORC": "orc",
+      "SPEC_ELF": "elf",
+      "SPEC_DWARF": "dwarf",
+      "SPEC_VAMPIRE": "vampire",
+      "SPEC_DRAGON": "dragon",
+      "SPEC_UNDEAD": "undead"
+    },
+    "mutationWeights": {
+      "mutation-a": 1,
+      "mutation-b": 1
+    }
+  }
+}
