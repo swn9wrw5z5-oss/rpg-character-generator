@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "release": "v6-first-acquired-free-20261124",
+  "release": "v6-ui-restore-20261124",
   "previousMain": "d208ba4eff6e8dae6b36046ac8f0cfb3f0ee814b",
   "legacyBase": "1fa1240b57abcb80ea639bf35ca9bb43fb7486fc",
   "runtimeBase": "v5/releases/fivelevels-v3-20261116/",
@@ -360,7 +360,7 @@
     },
     {
       "path": "v6/index.html",
-      "sha256": "5f60b26f11cc0445072d78e856e853f02829c02f8e75c2eeb31e809e4a0543a9",
+      "sha256": "015524c1c253f4c5c633987fbb10bbfcf5f9c0a82130787c9af112a3b23f426d",
       "lineEndings": "lf-normalized"
     },
     {
@@ -390,12 +390,12 @@
     },
     {
       "path": "v6/web/app.mjs",
-      "sha256": "00ffee73fc3727d3b740ab9a40f755b5ef23f59b60e65255c0abb77f3809930e",
+      "sha256": "47a86e2b46916631a441a094922e23bc246178274bc1879c49fe887eb50fb430",
       "lineEndings": "lf-normalized"
     },
     {
       "path": "v6/web/style.css",
-      "sha256": "8d6fbb5fb3779ab8635f90eb0107255ea0622d3c4831384224d00659bd6ab381",
+      "sha256": "49edce501c7da5673cafaa5b47153650be24fbbc9aaea6515533000f44919534",
       "lineEndings": "lf-normalized"
     }
   ],
